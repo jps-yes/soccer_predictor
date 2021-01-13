@@ -7,7 +7,7 @@ introduced to the game, for instance the introduction of the video assistant ref
 negatively influence the performance of the model, for instance COVID-19.</sub>
 
 ## Model: 
-name: _model1x2_v1_
+name: model1x2_v1
 
 ## Predictions
 _under construction_
