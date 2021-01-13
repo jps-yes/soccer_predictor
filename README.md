@@ -9,8 +9,8 @@ negatively influence the performance of the model, for instance COVID-19.</sub>
 ## Predictions
 __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5% (n=30)
 ### Today's matches
-|match|bet|outcome probability (%)|odd|best bookmaker|
-|---  |---|---                    |---|---           |
+|match|bet|outcome (%)|odd|best bookmaker|
+|---  |---|---        |---|---           |
 |test|test|test|test|test|
 |test3|test2|test1|test3|test2|
 
