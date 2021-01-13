@@ -1,2 +1,2 @@
 # Soccer Predictor
-    Disclaimer: asdasd
+Disclaimer
