@@ -1,2 +1,2 @@
 # Soccer Predictor
-_Disclaimer_: This
+__Disclaimer__: This
