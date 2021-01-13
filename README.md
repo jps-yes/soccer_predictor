@@ -11,21 +11,21 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5%
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Sittard - Sparta Rotterdam|team1|0.30196320597887033%|2.92|betano|7.6%|
-|Sittard - Sparta Rotterdam|team2|0.4127323086680624%|2.18|betano|14.3%|
-|Sittard - Sparta Rotterdam|tie|0.2853044853530673%|2.87|betano|3.4%|
-|Den Haag - Venlo|team1|0.33310832421283815%|4.8|betano|28.3%|
-|Den Haag - Venlo|tie|0.28944387015423545%|3.55|betano|13.1%|
-|Livingston - Aberdeen|team1|0.33985355861994476%|2.7|luckia|11.3%|
-|Livingston - Aberdeen|team2|0.3464011519336237%|2.85|luckia|15.3%|
-|Livingston - Aberdeen|tie|0.3137452894464315%|2.75|luckia|6.9%|
-|Feyenoord - Zwolle|team1|0.6647860602860239%|1.5|betano|59.2%|
-|Feyenoord - Zwolle|tie|0.2103684153733693%|4.3|luckia|5.3%|
-|Tottenham - Fulham|team1|0.63975777302819%|1.57|luckia|53.6%|
-|Tottenham - Fulham|team2|0.13667726556465137%|6.8|betano|3.5%|
-|Tottenham - Fulham|tie|0.2235649614071587%|3.95|luckia|5.0%|
+|Sittard - Sparta Rotterdam|team1|30.2%|2.95|betano|8.1%|
+|Sittard - Sparta Rotterdam|team2|41.3%|2.2|betano|15.0%|
+|Sittard - Sparta Rotterdam|tie|28.5%|2.82|betano|2.5%|
+|Den Haag - Venlo|team1|33.3%|5.1|betano|29.4%|
+|Den Haag - Venlo|tie|28.9%|3.6|betano|13.6%|
+|Livingston - Aberdeen|team1|34.0%|2.7|luckia|11.3%|
+|Livingston - Aberdeen|team2|34.6%|2.85|luckia|15.3%|
+|Livingston - Aberdeen|tie|31.4%|2.75|luckia|6.9%|
+|Feyenoord - Zwolle|team1|66.5%|1.5|betano|59.2%|
+|Feyenoord - Zwolle|tie|21.0%|4.3|luckia|5.3%|
+|Tottenham - Fulham|team1|64.0%|1.57|luckia|53.6%|
+|Tottenham - Fulham|team2|13.7%|6.4|betano|2.5%|
+|Tottenham - Fulham|tie|22.4%|4.1|betano|6.1%|
 
-&nbsp;&nbsp;<sup>_updated at 19:21h GMT - 13 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_updated at 19:22h GMT - 13 Jan, 2021_</sup>
 ### Yesterday's matches
     
 ## About
