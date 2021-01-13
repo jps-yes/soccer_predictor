@@ -11,8 +11,8 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5%
 #### Today's matches
 |match|bet|outcome (%)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|test|test|test|test|test|
-|test3|test2|test1|test3|test2|
+|test|test|test|test|test|test|
+|test3|test2|test1|test3|test2|test|
 
 #### Yesterday's matches
     
