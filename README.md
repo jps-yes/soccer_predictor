@@ -11,8 +11,9 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5%
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+
 No profitable bets were found.
-&nbsp;&nbsp;<sup>_updated at 19:28h GMT - 13 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_updated at 19:41h GMT - 13 Jan, 2021_</sup>
 ### Yesterday's matches
     
 ## About
