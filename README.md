@@ -6,11 +6,11 @@ played change and the more we are extrapolating from the training dataset. Concr
 introduced to the game, for instance the introduction of the video assistant referee (VAR). External factors can also
 negatively influence the performance of the model, for instance COVID-19.</sub>
 
-### Model: <sub>model1x2_v1</sub>
+## Model: <sup><sub>model1x2_v1</sub></sup>
 
-### Predictions
+## Predictions
 _under construction_
 
-### Details
+## Details
 _under construction_
 
