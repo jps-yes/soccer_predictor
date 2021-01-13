@@ -11,7 +11,7 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 __ROI__: 5% (n=30)
 |match|bet|outcome probability (%)|odd|best bookmaker|
 |---  |---|---                    |---|---           |
-|test|test|test|test|test||test|test|test|test|test|
+|test|test|test|test|test|</br>|test|test|test|test|test|
 
 ## Yesterday's matches
 __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
