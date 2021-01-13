@@ -11,8 +11,13 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5%
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+|Sittard - Sparta Rotterdam|team1||||
+|Den Haag - Venlo|team1||||
+|Livingston - Aberdeen|team1||||
+|Feyenoord - Zwolle|team1||||
+|Tottenham - Fulham|team1||||
 
-&nbsp;&nbsp;<sup>_updated at 19:03h GMT - 13 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_updated at 19:07h GMT - 13 Jan, 2021_</sup>
 ### Yesterday's matches
     
 ## About
