@@ -7,9 +7,9 @@ introduced to the game, for instance the introduction of the video assistant ref
 negatively influence the performance of the model, for instance COVID-19.</sub>
 
 ## Predictions
-__Latest update__: 18:28h GMT - 13 Jan, 2021
+__Latest update__: 18:29h GMT - 13 Jan, 2021
 __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5% (n=30)
-### Today's matches (updated at 18:28h GMT - 13 Jan, 2021
+### Today's matches # (updated at 18:29h GMT - 13 Jan, 2021)
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
 |test|test|test|test|test|test|
