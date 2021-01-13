@@ -15,7 +15,7 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5%
 |test|test|test|test|test|test|
 |test3|test2|test1|test3|test2|test|
 
- &nbsp;<sup>_updated at 18:35h GMT - 13 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_updated at 18:35h GMT - 13 Jan, 2021_</sup>
 ### Yesterday's matches
     
 ## About
