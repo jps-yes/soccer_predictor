@@ -6,7 +6,7 @@ played change and the more we are extrapolating from the training dataset. Concr
 introduced to the game, for instance the introduction of the video assistant referee (VAR). External factors can also
 negatively influence the performance of the model, for instance COVID-19.</sub>
 
-##__Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5% (n=30)
+## __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5% (n=30)
 ### Today's matches
 |match|bet|outcome probability (%)|odd|best bookmaker|
 |---  |---|---                    |---|---           |
