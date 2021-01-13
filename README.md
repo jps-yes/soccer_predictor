@@ -7,7 +7,7 @@ introduced to the game, for instance the introduction of the video assistant ref
 negatively influence the performance of the model, for instance COVID-19.</sub>
 
 ## Model: 
-__Name__: model1x2_v1</br>
+version: 1.0</br>
 __ROI__: 5% (n=30)
 
 ## Predictions
@@ -16,4 +16,3 @@ _under construction_
 ## Details
 _under construction_
 
-    
