@@ -8,3 +8,9 @@ negatively influence the performance of the model, for instance COVID-19.</sub>
 
 #### Model
 
+#### Predictions
+_under construction_
+
+#### Details
+_under construction_
+
