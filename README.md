@@ -1,2 +1,2 @@
 # Soccer Predictor
-Disclaimer: 123 the end.
+_Disclaimer_: This
