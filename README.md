@@ -11,11 +11,9 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5%
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Den Haag - Venlo|team1|33.3%|5.2|betano|17.4%|
-|Den Haag - Venlo|tie|28.9%|3.6|betano|1.6%|
-|Tottenham - Fulham|team1|64.0%|1.62|luckia|5.8%|
+|Den Haag - Venlo|team1|33.3%|5.2|betano|9.2%|
 
-&nbsp;&nbsp;<sup>_updated at 19:25h GMT - 13 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_updated at 19:26h GMT - 13 Jan, 2021_</sup>
 ### Yesterday's matches
     
 ## About
