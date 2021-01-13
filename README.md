@@ -8,15 +8,20 @@ negatively influence the performance of the model, for instance COVID-19.</sub>
 
 ## Predictions
 __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5% (n=30)
+
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
 
-&nbsp;&nbsp;No profitable bets were found.
+    &nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_updated at 20:04h GMT - 13 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_updated at 20:09h GMT - 13 Jan, 2021_</sup>
 
 ### Yesterday's matches
+|match|bet|p(bet)|odd|best bookmaker|% of bankroll|
+|---  |---|---        |---|---           |---|
+
+    &nbsp;&nbsp;No profitable bets were found.
     
 ## About
 _under construction_
