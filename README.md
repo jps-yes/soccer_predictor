@@ -7,7 +7,7 @@ introduced to the game, for instance the introduction of the video assistant ref
 negatively influence the performance of the model, for instance COVID-19.</sub>
 
 ## Model: 
-__name__: model1x2_v1
+__name__: model1x2_v1</br>
 __ROI__: 5% (no. bets = 30)
 
 ## Predictions
