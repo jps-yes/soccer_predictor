@@ -9,9 +9,9 @@ negatively influence the performance of the model, for instance COVID-19.</sub>
 ## Predictions
 __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 __ROI__: 5% (n=30)
-
-_under construction_
-
+|match|bet|outcome probability (%)|odd|best bookmaker|
+|---  |---|---                    |---|---           |   
+    
 ## Details
 _under construction_
 
