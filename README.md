@@ -15,7 +15,6 @@ __ROI__: 5% (n=30)
 |test3|test2|test1|test3|test2|
 
 ## Yesterday's matches
-__ROI__: 5% (n=30)
 |match|bet|outcome probability (%)|odd|best bookmaker|
 |---  |---|---                    |---|---           |
     
