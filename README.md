@@ -11,10 +11,10 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5%
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Manchester City - Brighton|team1|79.9%|2.05|luckia|53.9%|
-|Livingston - Aberdeen|team1|33.5%|4.6|luckia|6.6%|
-</br>
-&nbsp;&nbsp;<sup>_updated at 20:00h GMT - 13 Jan, 2021_</sup>
+
+&nbsp;&nbsp;No profitable bets were found.
+
+&nbsp;&nbsp;<sup>_updated at 20:04h GMT - 13 Jan, 2021_</sup>
 
 ### Yesterday's matches
     
