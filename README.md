@@ -8,7 +8,7 @@ negatively influence the performance of the model, for instance COVID-19.</sub>
 
 ## Model: 
 __Name__: model1x2_v1</br>
-__ROI__:  5% (n=30)
+__ROI__: 5% (n=30)
 
 ## Predictions
 _under construction_
