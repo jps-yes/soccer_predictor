@@ -15,7 +15,7 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: _s
 
 &nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 20:28h GMT - 14 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 20:29h GMT - 14 Jan, 2021_</sup>
 
 ### Yesterday's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
