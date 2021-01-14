@@ -12,16 +12,16 @@ __Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: _s
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Arsenal - Crystal Palace|team 1|60.1%|1.68|luckia|1.5%|
 
+&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 20:00h GMT - 14 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 20:25h GMT - 14 Jan, 2021_</sup>
 
 ### Yesterday's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Atl. Madrid - Sevilla|team 2|30.2%|4.35|luckia|11.8%|
-|Den Haag - Venlo|tie|28.9%|3.35|betano|1.3%|
+|Atl. Madrid - Sevilla|team 2|30.2%|4.35|luckia|8.4%|
+|Feyenoord - Zwolle|team 1|67.1%|1.44|betano|4.8%|
 
     
 ## About
