@@ -7,21 +7,23 @@ introduced to the game, for instance the introduction of the video assistant ref
 negatively influence the performance of the model, for instance COVID-19.</sub>
 
 ## Predictions
-__Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: 5% (n=30)
+__Model__: full time result v1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ROI__: _small sample size_% 
 
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+|Atl. Madrid - Sevilla|team2|30.2%|4.35|luckia|0.118%|
+|Den Haag - Venlo|tie|28.9%|3.35|betano|0.013%|
 
-&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_updated at 00:53h GMT - 14 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_updated at 19:40h GMT - 14 Jan, 2021_</sup>
 
 ### Yesterday's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+|Atl. Madrid - Sevilla|team2|30.2%|4.35|luckia|0.118%|
+|Den Haag - Venlo|tie|28.9%|3.35|betano|0.013%|
 
-&nbsp;&nbsp;No profitable bets were found.
     
 ## About
 _under construction_
