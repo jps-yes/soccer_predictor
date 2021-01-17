@@ -18,9 +18,9 @@ __ROI__: sample size too small
 
 &nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 23:03h GMT - 17 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 23:14h GMT - 17 Jan, 2021_</sup>
 
-### Yesterday's matches
+### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
 |:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|1.2%|
