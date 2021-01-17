@@ -64,6 +64,6 @@ Very briefly, the current implementation includes:
 , but each match is weighted differently by multiplying the kelly criterion for that match.
 * A diagnostic protocol to evaluate the model.
 
-<sup>A lot of these features are overkill for this application where a medium sized dataset was used.
-Again this was made for the sake of learning, not necessarily to save time or have the best performance ever.</sup>
+<sup>A lot of these features are overkill for this application, where a medium sized dataset was used.
+Again, this was made for the sake of learning, not necessarily to save time or have the best performance ever.</sup>
 
