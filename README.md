@@ -18,7 +18,7 @@ __ROI__: sample size too small
 
 &nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 22:53h GMT - 17 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 23:00h GMT - 17 Jan, 2021_</sup>
 
 ### Yesterday's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
@@ -64,6 +64,6 @@ Very briefly, the current implementation includes:
 , but each match is weighted differently by multiplying the kelly criterion for that match.
 * A diagnostic protocol to evaluate the model.
 
-<sup>A lot of there features are _overkill_ for this application where a medium sized dataset was used.
+<sup>A lot of these features are overkill for this application where a medium sized dataset was used.
 Again this was made for the sake of learning, not necessarily to save time or have the best performance ever.</sup>
 
