@@ -1,5 +1,4 @@
 import numpy as np
-import xlwings as xw
 
 
 # https://en.wikipedia.org/wiki/Kelly_criterion
