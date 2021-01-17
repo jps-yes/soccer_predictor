@@ -15,10 +15,10 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+|Inter - Juventus|team 2|36.8%|3.34|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|0.2%|
 
-&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 18:13h GMT - 17 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 18:44h GMT - 17 Jan, 2021_</sup>
 
 ### Yesterday's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
