@@ -59,11 +59,11 @@ end
 % you can edit this variables. Default values are good starting points
 x.numLayers = 3; % number of hidden layers
 x.nIter = 4; % number if epoch iterations
-x.lambda = .1; % lambda from
-x.dropout_prob = .25; % dropout probability
-x.layersShape = 1; % shape of network, 1-number of elements in each layers decreases linearly
-x.lambda2 = 100; % this value is summed to kelly criterion weight in the value function
-x.alpha_div = 10; % division constant in autmatic alpha finder
+x.lambda = .1; % lambda for L2 regularization
+x.dropout_prob = .25; % dropout probability for dropout regularization
+x.layersShape = 1; % shape of network, 1: the number of elements in each layers decreases linearly
+x.lambda2 = 100; % this value is summed to kelly criterion weight in the cost function
+x.alpha_div = 10; % division constant in automatic alpha finder.
 %%
 inputLayerSize  = size(X,2);    % number of features
 numLabels = size(Yoriginal,2);  % 3 labels, 1-team1 wins, 2-team2 wins, 3-tie
