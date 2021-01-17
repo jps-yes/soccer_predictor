@@ -18,7 +18,7 @@ __ROI__: sample size too small
 
 &nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 23:00h GMT - 17 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 23:03h GMT - 17 Jan, 2021_</sup>
 
 ### Yesterday's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
@@ -57,7 +57,7 @@ Very briefly, the current implementation includes:
 * Dropout regularization
 * L2 regularization
 * Adam optimization algorithm;
-* A protocol to find learning the rate based on [this paper by Leslie Smith](https://arxiv.org/abs/1708.07120);
+* A protocol for finding the learning rate based on [this paper by Leslie Smith](https://arxiv.org/abs/1708.07120);
 * Leaky ReLu for input and hidden layers, and softmax for output layer activation functions;
 * A custom cost function consisting of the typical 
 [cross entropy loss function](https://en.wikipedia.org/wiki/Cross_entropy#Cross-entropy_loss_function_and_logistic_regression)
