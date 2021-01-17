@@ -12,7 +12,7 @@ def predict(model):
     nn_params, _, _, input_layer_size, hidden_layers_size, num_labels, mu_nn, sigma_nn, mu, sigma = load_model(model)
     # LOADS MATCH DATA (raw)
     match_data = load_match_data()
-    if not match_data:
+    if match_data.size == 0:
         return np.array([]), np.array([])
     odds = copy.deepcopy(match_data[:, 5:8])
     match_data[:, 5:8] = 1 / match_data[:, 5:8]

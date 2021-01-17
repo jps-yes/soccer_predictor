@@ -36,15 +36,17 @@ def get_odds(url_league, data):
             identifier += 1
             data[identifier] = {}
             # FILLS ATTRIBUTES FOR THIS MATCH
-            try:
+            if len(row.find_all('span', {'class': 'live-odds-ico-prev'})) == 0\
+                    and len(row.find_all('td', {'class': 'center bold table-odds table-score'})) == 0:
                 data[identifier]['matchTime'] = str(
                     float(time_regex.search(row.select('td[class*="table-time datet "]')[0].get_text()).group(1)) +
                     float(time_regex.search(row.select('td[class*="table-time datet "]')[0].get_text()).group(2)) / 60)
-            except AttributeError:
+            else:
                 # MATCH CURRENTLY HAPPENING
                 del data[identifier]
                 identifier -= 1
                 continue
+
             data[identifier]['match_day'] = str(datetime.now().day)
             data[identifier]['match_month'] = str(datetime.now().month)
             data[identifier]['match_year'] = str(datetime.now().year)
@@ -128,6 +130,7 @@ def oddsportal_scraper(leagueid_list, scrape_results=False):
     # STARTS CHROMEDRIVER
     global driver
     options = Options()
+    options.add_argument("--log-level=3")
     options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     driver = webdriver.Chrome(options=options)

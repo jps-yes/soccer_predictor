@@ -1,3 +1,5 @@
+from difflib import SequenceMatcher
+
 import numpy as np
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -6,12 +8,12 @@ from selenium.webdriver.chrome.options import Options
 from dictionaries import *
 
 global bookmaker
-from difflib import SequenceMatcher
 
 
 def start_driver(visible=False):
     # STARTS CHROMEDRIVER
     options = Options()
+    options.add_argument("--log-level=3")
     if not visible:
         options.add_argument('--headless')
         options.add_argument('--disable-gpu')
@@ -24,7 +26,8 @@ def luckia_scraper():
     bookmaker = 'luckia'
     url_list, _ = get_todays_leagues()
     matches = {}
-    driver = start_driver()
+    url_found = {}
+    driver = start_driver(visible=False)
     for url in url_list:
         driver.get(url)
         while True:
@@ -38,13 +41,14 @@ def luckia_scraper():
                 team1 = match.find_all('span', {'class': 'rj-ev-list__name-text'})[0].get_text()
                 team2 = match.find_all('span', {'class': 'rj-ev-list__name-text'})[1].get_text()
                 odds = match.find_all('span', {'class': 'rj-ev-list__bet-btn__content rj-ev-list__bet-btn__odd'})
-                matches[team1 + ' - ' + team2] = [float(odds[0].get_text()),  # odd1
-                                                  float(odds[2].get_text()),  # odd2
-                                                  float(odds[1].get_text())]  # tie
-
+                if len(odds) == 3:
+                    matches[team1 + ' - ' + team2] = [float(odds[0].get_text()),  # odd1
+                                                      float(odds[2].get_text()),  # odd2
+                                                      float(odds[1].get_text())]  # tie
+                    url_found[team1 + ' - ' + team2] = [url, url, url]
             break
     driver.quit()
-    return matches
+    return matches, url_found
 
 
 def betano_scraper():
@@ -52,7 +56,8 @@ def betano_scraper():
     bookmaker = 'betano'
     url_list, _ = get_todays_leagues()
     matches = {}
-    driver = start_driver()
+    url_found = {}
+    driver = start_driver(visible=False)
     for url in url_list:
         driver.get(url)
         while True:
@@ -61,14 +66,23 @@ def betano_scraper():
             if not soup.find_all('tr', {'category': 'FOOT'}):
                 continue
             for match in soup.find_all('tr', {'category': 'FOOT'}):
-                team1 = match.find_all('span', {'class': 'events-list__grid__info__main__participants__name'})[0].get_text().strip()
-                team2 = match.find_all('span', {'class': 'events-list__grid__info__main__participants__name'})[1].get_text().strip()
-                odds = match.find_all('span', {'class': 'selections__selection__odd'})
-                matches[team1 + ' - ' + team2] = [float(odds[0].get_text()),  # odd1
-                                                  float(odds[2].get_text()),  # odd2
-                                                  float(odds[1].get_text())]  # tie
+                team1 = match.find_all('span', {'class': 'events-list__grid__info__main__participants__name'})[
+                    0].get_text().strip()
+                team2 = match.find_all('span', {'class': 'events-list__grid__info__main__participants__name'})[
+                    1].get_text().strip()
+                sections = match.find_all('section')
+                odds = []
+                for section in sections:
+                    if section.find('div', {'class', 'table__markets__market__title__text'}).get_text() == 'Resultado Final':
+                        odds = section.find_all('span', {'class': 'selections__selection__odd'})
+                if len(odds) == 3:
+                    matches[team1 + ' - ' + team2] = [float(odds[0].get_text().replace('-', '1')),  # odd1
+                                                      float(odds[2].get_text().replace('-', '1')),  # odd2
+                                                      float(odds[1].get_text().replace('-', '1'))]  # tie
+                    url_found[team1 + ' - ' + team2] = [url, url, url]
+
             break
-    return matches
+    return matches, url_found
 
 
 def betpt_scraper():
@@ -104,51 +118,73 @@ def nossaaposta_scraper():
 
 
 def best_bookmaker():
-    matches_luckia = luckia_scraper()
-    odds_luckia = data_matcher(matches_luckia)
-    matches_betano = betano_scraper()
-    odds_betano = data_matcher(matches_betano)
+    matches_luckia, url_luckia = luckia_scraper()
+    odds_luckia, url_luckia = data_matcher(matches_luckia, url_luckia)
+    matches_betano, url_betano = betano_scraper()
+    odds_betano, url_betano = data_matcher(matches_betano, url_betano)
     odds = np.maximum(odds_luckia, odds_betano)
     bookmakers = []
+    urls = []
     for i in range(odds.shape[0]):
         bookmakers.append(['', '', ''])
+        urls.append(['', '', ''])
         for j in range(odds.shape[1]):
             if odds[i][j] == 1:
                 bookmakers[i][j] = ''
+                urls[i][j] = ''
             elif odds[i][j] == odds_luckia[i][j]:
                 bookmakers[i][j] = 'luckia'
+                urls[i][j] = url_luckia[i][j]
             elif odds[i][j] == odds_betano[i][j]:
                 bookmakers[i][j] = 'betano'
+                urls[i][j] = url_betano[i][j]
     odds[odds == 1] += .001
-    return odds, bookmakers
+    return odds, bookmakers, urls
 
 
-def data_matcher(matches):
+def data_matcher(matches, url_found):
     _, include = get_todays_leagues()
     # IMPORTS TEAM NAMES FROM merged_data.xlsx
     wb = openpyxl.load_workbook(r'.\merged_data.xlsx')
     sheet = wb.active
     ordered_odds = []
+    urls = []
     i = -1
     for row in sheet.iter_rows(2):
         i += 1
         if not include[i]:
             ordered_odds.append([1.00, 1.00, 1.00])
+            urls.append(['', '', ''])
             continue
         score = 0
         match_actual = row[0].value + ' - ' + row[1].value
         # EXCEPTIONS
+        #
+        #
         match_actual = match_actual.replace('QPR', 'Queens Park Rangers')
+        match_actual = match_actual.replace('Lecce', 'US Lecce')
+        match_actual = match_actual.replace('Ferreira', 'Paços de Ferreira')
+        match_actual = match_actual.replace('Atletico-MG', 'Atlético Mineiro')
+        match_actual = match_actual.replace('Leuven', 'Oud Heverlee Leuven')
+        match_actual = match_actual.replace('Sao Paulo', 'São Paulo')
+        match_actual = match_actual.replace('Athletico-PR', 'Athletico PR Parana')
+        match_actual = match_actual.replace('U.N.A.M.- Pumas', 'UNAM Pumas')
+        match_actual = match_actual.replace('Nacional', 'CD Nacional')
+        match_actual = match_actual.replace('Club Brugge KV', 'Club Brugge')
+        match_actual = match_actual.replace('Beerschot VA', 'KFCO Beerschot VA')
+        ###################
         for match in matches.keys():
             if similar(match_actual, match) >= score:
                 score = similar(match_actual, match)
                 match_found = match
         print(str(score) + ': ' + match_actual + '-->' + match_found)
-        if score >= 0.60:
+        if score >= 0.55:
             ordered_odds.append(matches[match_found])
+            urls.append(url_found[match_found])
         else:
             ordered_odds.append([1.00, 1.00, 1.00])
-    return np.array(ordered_odds)
+            urls.append(['', '', ''])
+    return np.array(ordered_odds), urls
 
 
 def get_todays_leagues():
@@ -182,4 +218,10 @@ def get_todays_leagues():
 
 
 def similar(a, b):
-    return max([SequenceMatcher(None, a, b).ratio(), SequenceMatcher(None, b, a).ratio()])
+    a1, a2 = a.split(' - ')
+    b1, b2 = b.split(' - ')
+    score = [SequenceMatcher(None, a, b).ratio(), SequenceMatcher(None, b, a).ratio()]
+    aux = max([SequenceMatcher(None, b1, a1).ratio(), SequenceMatcher(None, a1, b1).ratio()])/2
+    aux = aux + max([SequenceMatcher(None, b2, a2).ratio(), SequenceMatcher(None, a2, b2).ratio()])/2
+    score.append(aux)
+    return max(score)
