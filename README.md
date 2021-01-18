@@ -19,7 +19,7 @@ __ROI__: sample size too small
 |Palmeiras - Corinthians|team 1|58.1%|2.05|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|7.6%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 11:59h GMT - 18 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 12:30h GMT - 18 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
