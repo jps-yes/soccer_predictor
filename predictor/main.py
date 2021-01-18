@@ -22,10 +22,13 @@ def main():
             # Applies kelly criterion to determine the percentage of bankroll to bet
             percentage = kelly_criterion(prob, odds)
             # Updates github README.md --> private
-            # github_updater(percentage, prob, odds, bookmakers, urls)
+            # github_updater(percentage, prob, odds, bookmakers, urls).
+            print('')
+            print('For the order of the teams in merged_data.xlsx the % of bankroll to wager is:')
+            print(percentage)
         else:
             print('No more matches for today.')
-            percentage = np.array
+            percentage = np.array([])
             odds = np.array([])
             bookmakers = []
             # Updates github README.md --> private

@@ -1,3 +1,6 @@
 chromedriver.exe
 .idea
 __pycache__
+merged_data.xlsx
+bet_history.xlsx
+team_dict.txt
