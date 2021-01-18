@@ -15,10 +15,11 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+|Cagliari - AC Milan|team 2|68.0%|1.6|[luckia](https://sports.luckia.pt/sports/futebol/it%C3%A1lia-s%C3%A9rie-a/)|1.1%|
+|Palmeiras - Corinthians|team 1|58.3%|2.02|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|5.5%|
 
-&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 23:23h GMT - 17 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 01:24h GMT - 18 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
@@ -45,7 +46,7 @@ Currently implemented:
     * nossaaposta:x:
 
 - Calculates the [Kelly criterion](https://en.wikipedia.org/wiki/Kelly_criterion) to determine the bankroll percentage 
-to wager;
+to wager.
 
 ### Neural network trainer
 The neural network was implemented mostly from scratch in Matlab, although some code snippets were used as provided by 
@@ -61,7 +62,7 @@ Very briefly, the current implementation includes:
 * Leaky ReLu for input and hidden layers, and softmax for output layer activation functions;
 * A custom cost function consisting of the typical 
 [cross entropy loss function](https://en.wikipedia.org/wiki/Cross_entropy#Cross-entropy_loss_function_and_logistic_regression)
-, but each match is weighted differently by multiplying the kelly criterion for that match.
+, but each match is weighted differently by multiplying the Kelly criterion for that match.
 * A diagnostic protocol to evaluate the model.
 
 <sup>A lot of these features are overkill for this application, where a medium sized dataset was used.
