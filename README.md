@@ -16,10 +16,10 @@ __ROI__: sample size too small
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
 |Cagliari - AC Milan|team 2|68.6%|1.62|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|6.7%|
-|Palmeiras - Corinthians|team 1|57.9%|2.07|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|7.9%|
+|Palmeiras - Corinthians|team 1|57.8%|2.07|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|7.8%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 17:08h GMT - 18 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 17:39h GMT - 18 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
