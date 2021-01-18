@@ -15,16 +15,19 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Cagliari - AC Milan|team 2|68.0%|1.6|[luckia](https://sports.luckia.pt/sports/futebol/it%C3%A1lia-s%C3%A9rie-a/)|1.1%|
-|Palmeiras - Corinthians|team 1|58.3%|2.02|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|5.5%|
+|Cagliari - AC Milan|team 2|68.0%|1.6|[luckia](https://sports.luckia.pt/sports/futebol/it%C3%A1lia-s%C3%A9rie-a/)|3.8%|
+|Palmeiras - Corinthians|team 1|58.3%|2.02|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|6.8%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 01:24h GMT - 18 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 01:36h GMT - 18 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|1.2%|
+|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|2.7%|
+|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|5.5%|
+|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|10.0%|
+|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|2.9%|
 
     
 ## About
