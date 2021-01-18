@@ -15,12 +15,11 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Cagliari - AC Milan|team 2|68.4%|1.62|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|6.3%|
-|Portimonense - Belenenses|team 2|35.2%|3.5|[betano](https://www.betano.pt/sport/futebol/portugal/primeira-liga/17083r/)|0.3%|
-|Palmeiras - Corinthians|team 1|57.8%|2.1|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|9.0%|
+|Cagliari - AC Milan|team 2|68.6%|1.62|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|6.9%|
+|Palmeiras - Corinthians|team 1|57.8%|2.1|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|8.9%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 18:10h GMT - 18 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 18:41h GMT - 18 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
