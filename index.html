@@ -1,0 +1,97 @@
+<h1 id="soccer-predictor">Soccer Predictor</h1>
+<p><sub><strong>Disclaimer</strong>: This project is solely an exercise on web scraping and machine learning.
+I do not use it to place bets myself, but if you are willing to proceed anyway, first consider that past performance
+does not guarantee further performance. The further to the future we get, the more the conditions the matches are
+played change and the more we are extrapolating from the training dataset. Concretely, new rules might be
+introduced to the game, for instance the introduction of the video assistant referee (VAR). External factors can also
+negatively influence the performance of the model, for example COVID-19 increases the chances of players missing a game.
+Furthermore, the longer before the game begins, the less accurate the prediction will be.</sub></p>
+<h2 id="predictions">Predictions</h2>
+<p><strong>Model</strong>: full time result v1.0</br>
+<strong>ROI</strong>: sample size too small </p>
+<h3 id="today-s-matches">Today&#39;s matches</h3>
+<table>
+<thead>
+<tr>
+<th>match</th>
+<th>bet</th>
+<th>p(bet)</th>
+<th>odd</th>
+<th>best bookmaker</th>
+<th>% of bankroll</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;&nbsp;No profitable bets were found.</p>
+<p>&nbsp;&nbsp;<sup><em>automatically updated at 23:23h GMT - 17 Jan, 2021</em></sup></p>
+<h3 id="last-week-s-matches">Last week&#39;s matches</h3>
+<table>
+<thead>
+<tr>
+<th>match</th>
+<th>bet</th>
+<th>p(bet)</th>
+<th>odd</th>
+<th>best bookmaker</th>
+<th>% of bankroll</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:heavy_check_mark: Fluminense - Sport Recife</td>
+<td>team 1</td>
+<td>59.6%</td>
+<td>1.88</td>
+<td>betano</td>
+<td>1.2%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="about">About</h2>
+<h3 id="predictor">Predictor</h3>
+<ul>
+<li>Collects and preprocesses input data for the neural network;</li>
+<li>Deploys neural network obtaining the probability of each match outcome;</li>
+<li><p>Collects odds from legal portuguese bookmakers, compares and determines best odd;</br>
+Currently implemented:</p>
+<ul>
+<li><strong>luckia</strong>:heavy_check_mark:</li>
+<li><strong>betano</strong>:heavy_check_mark:</li>
+<li>bet.pt:x:</li>
+<li>placard:x:</li>
+<li>solverde:x:</li>
+<li>esc:x:</li>
+<li>betclick:x:</li>
+<li>moosh:x:</li>
+<li>betway:x:</li>
+<li>nossaaposta:x:</li>
+</ul>
+</li>
+<li><p>Calculates the <a href="https://en.wikipedia.org/wiki/Kelly_criterion">Kelly criterion</a> to determine the bankroll percentage 
+to wager;</p>
+</li>
+</ul>
+<h3 id="neural-network-trainer">Neural network trainer</h3>
+<p>The neural network was implemented mostly from scratch in Matlab, although some code snippets were used as provided by 
+<a href="https://www.coursera.org/learn/machine-learning">Andrew Ng&#39;s machine learning course</a>.</p>
+<p>Very briefly, the current implementation includes:</p>
+<ul>
+<li>Data preprocessing (feature normalization, <em>etc.</em>)</li>
+<li>Batch normalization</li>
+<li>Dropout regularization</li>
+<li>L2 regularization</li>
+<li>Adam optimization algorithm;</li>
+<li>A protocol for finding the learning rate based on <a href="https://arxiv.org/abs/1708.07120">this paper by Leslie Smith</a>;</li>
+<li>Leaky ReLu for input and hidden layers, and softmax for output layer activation functions;</li>
+<li>A custom cost function consisting of the typical 
+<a href="https://en.wikipedia.org/wiki/Cross_entropy#Cross-entropy_loss_function_and_logistic_regression">cross entropy loss function</a>
+, but each match is weighted differently by multiplying the kelly criterion for that match.</li>
+<li>A diagnostic protocol to evaluate the model.</li>
+</ul>
+<p><sup>A lot of these features are overkill for this application where a medium sized dataset was used.
+Again this was made for the sake of learning, not necessarily to save time or have the best performance ever.</sup></p>
