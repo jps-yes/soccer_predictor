@@ -19,7 +19,7 @@ __ROI__: sample size too small
 |Palmeiras - Corinthians|team 1|58.3%|2.02|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|6.8%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 01:36h GMT - 18 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 01:42h GMT - 18 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
@@ -56,16 +56,16 @@ The neural network was implemented mostly from scratch in Matlab, although some 
 [Andrew Ng's machine learning course](https://www.coursera.org/learn/machine-learning).
 
 Very briefly, the current implementation includes:
-* Data preprocessing (feature normalization, _etc._)
-* Batch normalization
-* Dropout regularization
-* L2 regularization
+* Data preprocessing (feature normalization, _etc._);
+* Batch normalization;
+* Dropout regularization;
+* L2 regularization;
 * Adam optimization algorithm;
 * A protocol for finding the learning rate based on [this paper by Leslie Smith](https://arxiv.org/abs/1708.07120);
 * Leaky ReLu for input and hidden layers, and softmax for output layer activation functions;
 * A custom cost function consisting of the typical 
 [cross entropy loss function](https://en.wikipedia.org/wiki/Cross_entropy#Cross-entropy_loss_function_and_logistic_regression)
-, but each match is weighted differently by multiplying the Kelly criterion for that match.
+, but each match's outcome is weighted differently by multiplying the Kelly criterion for that outcome.
 * A diagnostic protocol to evaluate the model.
 
 <sup>A lot of these features are overkill for this application, where a medium sized dataset was used.
