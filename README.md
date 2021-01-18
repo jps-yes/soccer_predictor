@@ -15,19 +15,20 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Cagliari - AC Milan|team 2|68.2%|1.62|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|6.3%|
-|Palmeiras - Corinthians|team 1|58.2%|2.05|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|8.1%|
+|Cagliari - AC Milan|team 2|68.2%|1.62|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|9.8%|
+|Palmeiras - Corinthians|team 1|58.2%|2.05|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|9.9%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 08:57h GMT - 18 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 09:03h GMT - 18 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|2.7%|
-|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|5.5%|
-|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|10.0%|
-|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|2.9%|
+|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|4.8%|
+|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|5.8%|
+|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|11.0%|
+|:heavy_check_mark: U.N.A.M.- Pumas - Mazatlan FC|team 1|51.8%|2.15|luckia|0.2%|
+|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|13.0%|
 
     
 ## About
