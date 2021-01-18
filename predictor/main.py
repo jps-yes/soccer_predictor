@@ -3,7 +3,6 @@ import time
 from bet_history import *
 from bookmaker_scraper import *
 from data_merger import *
-from github_updater import *
 from kelly_criterion import *
 from predict import *
 
@@ -22,8 +21,8 @@ def main():
             bet_history(prob, odds, bookmakers)
             # Applies kelly criterion to determine the percentage of bankroll to bet
             percentage = kelly_criterion(prob, odds)
-            # Updates github README.md
-            github_updater(percentage, prob, odds, bookmakers, urls)
+            # Updates github README.md --> private
+            # github_updater(percentage, prob, odds, bookmakers, urls)
         else:
             print('No more matches for today.')
             percentage = np.array
