@@ -15,10 +15,10 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Palmeiras - Corinthians|team 1|57.8%|2.1|[betano](https://www.betano.pt/sport/futebol/brasil/brasileirao-serie-a/10016r/)|8.9%|
+|Palmeiras - Corinthians|team 1|57.8%|2.05|[luckia](https://sports.luckia.pt/sports/futebol/brasil-s%C3%A9rie-a/)|6.8%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 19:47h GMT - 18 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 20:17h GMT - 18 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
