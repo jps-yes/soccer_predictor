@@ -15,10 +15,11 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Leicester - Chelsea|team 2|45.8%|2.61|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|0.8%|
+|Bayer Leverkusen - Dortmund|team 2|53.9%|2.12|[betano](https://www.betano.pt/sport/futebol/alemanha/bundesliga/216r/)|0.7%|
+|Leicester - Chelsea|team 2|45.1%|2.67|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|1.0%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 18:19h GMT - 19 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 19:19h GMT - 19 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
