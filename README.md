@@ -15,18 +15,19 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Leicester - Chelsea|team 2|47.5%|2.51|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|1.1%|
+|Leicester - Chelsea|team 2|47.5%|2.51|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|1.2%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 01:15h GMT - 19 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 01:23h GMT - 19 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|1.5%|
-|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|4.4%|
+|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|1.4%|
+|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|4.5%|
 |:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|8.8%|
-|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|3.3%|
+|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|2.1%|
+|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|4.2%|
 |:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|6.5%|
 
     
