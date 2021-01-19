@@ -15,18 +15,19 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+|Leicester - Chelsea|team 2|47.5%|2.51|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|1.1%|
 
-&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 22:20h GMT - 18 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 01:15h GMT - 19 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|2.4%|
-|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|5.7%|
-|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|9.9%|
-|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|0.1%|
+|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|1.5%|
+|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|4.4%|
+|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|8.8%|
+|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|3.3%|
+|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|6.5%|
 
     
 ## About
