@@ -15,10 +15,10 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Leicester - Chelsea|team 2|47.5%|2.51|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|1.2%|
+|Leicester - Chelsea|team 2|47.3%|2.51|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|0.9%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 01:23h GMT - 19 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 10:53h GMT - 19 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
