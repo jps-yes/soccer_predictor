@@ -15,11 +15,10 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Udinese - Atalanta|team 2|59.7%|2.02|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|8.6%|
-|Fulham - Manchester Utd|team 2|66.6%|1.62|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|0.4%|
+|Fulham - Manchester Utd|team 2|66.7%|1.62|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|0.4%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 14:00h GMT - 20 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 15:00h GMT - 20 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
