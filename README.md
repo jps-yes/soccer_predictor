@@ -18,7 +18,7 @@ __ROI__: sample size too small
 
 &nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 20:28h GMT - 20 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 21:27h GMT - 20 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
