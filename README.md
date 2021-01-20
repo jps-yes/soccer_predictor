@@ -15,11 +15,11 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|[luckia](https://sports.luckia.pt/sports/futebol/austr%C3%A1lia-liga-a/)|3.5%|
-|Udinese - Atalanta|team 2|64.0%|1.75|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|3.8%|
+|Udinese - Atalanta|team 2|64.5%|1.75|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|5.1%|
+|Fulham - Manchester Utd|team 2|66.5%|1.62|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|0.1%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 00:59h GMT - 20 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 11:55h GMT - 20 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
