@@ -15,10 +15,10 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Fulham - Manchester Utd|team 2|66.7%|1.62|[betano](https://www.betano.pt/sport/futebol/inglaterra/premier-league/1r/)|0.4%|
 
+&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 15:00h GMT - 20 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 16:01h GMT - 20 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
