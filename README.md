@@ -15,20 +15,22 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+|Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|[luckia](https://sports.luckia.pt/sports/futebol/austr%C3%A1lia-liga-a/)|3.5%|
+|Udinese - Atalanta|team 2|64.0%|1.75|[betano](https://www.betano.pt/sport/futebol/italia/serie-a/1635r/)|3.8%|
 
-&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 21:41h GMT - 19 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 00:59h GMT - 20 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|1.4%|
-|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|4.5%|
-|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|8.8%|
-|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|2.1%|
-|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|4.2%|
-|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|6.5%|
+|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|0.9%|
+|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|3.6%|
+|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|8.1%|
+|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|5.4%|
+|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|4.3%|
+|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|5.9%|
+|:x: Leicester - Chelsea|team 2|45.1%|2.67|betano|0.1%|
 
     
 ## About
