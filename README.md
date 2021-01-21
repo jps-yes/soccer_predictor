@@ -15,10 +15,10 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Eibar - Atl. Madrid|team 2|61.1%|1.88|[betano](https://www.betano.pt/sport/futebol/espanha/laliga/5/)|4.0%|
+|Eibar - Atl. Madrid|team 2|61.3%|1.87|[betano](https://www.betano.pt/sport/futebol/espanha/laliga/5/)|3.8%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 15:16h GMT - 21 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 16:16h GMT - 21 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
