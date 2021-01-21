@@ -18,20 +18,18 @@ __ROI__: sample size too small
 
 &nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 00:42h GMT - 21 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 01:03h GMT - 21 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|4.3%|
-|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|8.6%|
-|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|2.7%|
-|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|4.1%|
-|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|6.4%|
-|:x: Bayer Leverkusen - Dortmund|team 2|53.9%|2.12|betano|0.5%|
-|:x: Leicester - Chelsea|team 2|45.1%|2.67|betano|0.8%|
-|:x: Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|luckia|4.1%|
-|:x: Udinese - Atalanta|team 2|59.7%|2.02|betano|8.6%|
+|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|2.0%|
+|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|6.7%|
+|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|11.5%|
+|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|4.5%|
+|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|4.9%|
+|:x: Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|luckia|2.0%|
+|:x: Udinese - Atalanta|team 2|59.7%|2.02|betano|7.5%|
 
     
 ## About
