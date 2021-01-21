@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="website/style.css">
+		<div id="home">
+			<img class="logo" src="website/images/logo.svg">
+		</div>
+		<div class="menu">
+			<a class="menuItem" href="#home">home</a>|
+			<a class="menuItem" href="#predictions">predictions</a>|
+			<a class="menuItem" href="#about">about</a>|
+			<a class="menuItem" href="https://github.com/jps-yes/soccer_predictor">github</a>
+		</div>
+	</head>
+	
+	<body>
+	
+		<div class="spacingTop smallText"> 
+			<span class="bold">Disclaimer:</span> This project is solely an exercise on web scraping and machine learning. 
+			I do not use it to place bets myself<span id="dots">...</span><span id="more">, but if you are willing to proceed anyway, first consider that past performance 
+			does not guarantee further performance. The further to the future we get, the more the conditions the matches are 
+			played change and the more we are extrapolating from the training dataset. Concretely, new rules might be 
+			introduced to the game, for instance the introduction of the video assistant referee (VAR). External factors can also 
+			Furthermore, the longer before the game begins, the less accurate the prediction will be.
+			negatively influence the performance of the model, for example COVID-19 increases the chances of players missing a game.</span>
+			<a onclick="readMore()" id="readMore">Read more</a>
+		</div>
+		
+		<div class="title" id="predictions">Predictions</div>
+		<div class="normalText">
+			<span class="bold">Model:</span>
+			full time result v1.0
+		</div>
+		<div class="normalText">
+			<span class="bold">ROI:</span>
+			sample size too small
+		</div>
+		<div class="subtitle">Today's matches</div>
+		
+		<div class="normalText">
+		<table>
+			<thead>
+			<tr>
+				<th>match</th>
+				<th>bet</th>
+				<th>p(bet)</th>
+				<th>odd</th>
+				<th>best bookmaker</th>
+				<th>% of bankroll</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Fluminense - Sport Recife</td>
+				<td>team 1</td>
+				<td>59.6%</td>
+				<td>1.88</td>
+				<td>betano</td>
+				<td>1.3%</td>
+			</tr>
+			<tr>
+				<td>Nantes - Lens</td>
+				<td>team 2</td>
+				<td>36.3%</td>
+				<td>3.9</td>
+				<td>luckia</td>
+				<td>4.3%</td>
+			</tr>
+			<tr>
+				<td>Wolfsberger AC - Sturm Graz</td>
+				<td>team 2</td>
+				<td>50.6%</td>
+				<td>2.6</td>
+				<td>luckia</td>
+				<td>8.6%</td>
+			</tr>
+			<tr>
+				<td>Manchester City - Crystal Palace</td>
+				<td>team 1</td>
+				<td>82.2%</td>
+				<td>1.25</td>
+				<td>luckia</td>
+				<td>2.7%</td>
+			</tr>
+			<tr>
+				<td>Cagliari - AC Milan</td>
+				<td>team 2</td>
+				<td>67.9%</td>
+				<td>1.62</td>
+				<td>betano</td>
+				<td>4.1%</td>
+			</tr>
+			<tr>
+				<td>Palmeiras - Corinthians</td>
+				<td>team 1</td>
+				<td>57.7%</td>
+				<td>2.07</td>
+				<td>betano</td>
+				<td>6.4%</td>
+			</tr>
+			<tr>
+				<td>Bayer Leverkusen - Dortmund</td>
+				<td>team 2</td>
+				<td>53.9%</td>
+				<td>2.12</td>
+				<td>betano</td>
+				<td>0.5%</td>
+			</tr>
+			<tr>
+				<td>Leicester - Chelsea</td>
+				<td>team 2</td>
+				<td>45.1%</td>
+				<td>2.67</td>
+				<td>betano</td>
+				<td>0.8%</td>
+			</tr>
+			</tbody>
+		</table>
+		</div>
+		
+		<div id="about" class="title">About</div>
+		<div class="subtitle">Predictor</div>
+		<div class="normalText">
+			<ul class="inline">
+				<li>Collects and preprocesses input data for the neural network;</li>
+				<li>Deploys neural network obtaining the probability of each match outcome;</li>
+				<li>Collects odds from legal portuguese bookmakers, compares and determines best odd;
+				<p class="indent">Currently implemented:</p></li>
+				<ul>
+					<li class="correct"><a href="https://www.luckia.pt/apostas-desportivas/">luckia</a></li>
+					<li class="correct"><a href="https://www.betano.pt/">betano</a></li>
+					<li class="wrong"><a href="https://www.bet.pt/apostas-desportivas/">bet.pt</a></li>
+					<li class="wrong"><a href="https://placard.jogossantacasa.pt/">placard</a></li>
+					<li class="wrong"><a href="https://apostas.solverde.pt/home">solverde</a></li>
+					<li class="wrong"><a href="https://www.estorilsolcasinos.pt/pt/apostas">esc</a></li>
+					<li class="wrong"><a href="https://www.betclic.pt/">betclick</a></li>
+					<li class="wrong"><a href="https://www.moosh.pt/sports/">moosh</a></li>
+					<li class="wrong"><a href="https://www.betway.pt/desportos/">betway</a></li>
+					<li class="wrong"><a href="https://www.nossaaposta.pt/apostas-desportivas">nossaaposta</a></li>
+				</ul>
+				<li>Calculates the <a href="https://en.wikipedia.org/wiki/Kelly_criterion">Kelly criterion</a> to determine the bankroll percentage to wager.</li>
+			</ul>
+		</div>
+		
+		<div class="subtitle">Neural Network</div>
+		
+		<div class="normalText">
+			The neural network was implemented mostly from scratch in Matlab, although some code snippets were used as provided by <a href="https://www.coursera.org/learn/machine-learning">Andrew Ng's machine learning course</a>.
+			<p>Very briefly, the current implementation includes:</p>
+			<ul class="inline">
+				<li>Data preprocessing (feature normalization, etc.)</li>
+				<li>Batch normalization;</li>
+				<li>Dropout regularization;</li>
+				<li>L2 regularization;</li>
+				<li>Adam optimization algorithm;</li>
+				<li>A protocol for finding the learning rate based on <a href="https://arxiv.org/abs/1708.07120">this paper by Leslie Smith</a>;</li>
+				<li>Leaky ReLu for input and hidden layers, and softmax for output layer activation functions;</li>
+				<li>A custom cost function consisting of the typical <a href="https://en.wikipedia.org/wiki/Cross_entropy#Cross-entropy_loss_function_and_logistic_regression">cross entropy loss function</a>, but each match's outcome is weighted differently by multiplying the Kelly criterion for that outcome.</li>
+				<li>A diagnostic protocol to evaluate the model.</li>
+			</ul>		
+		</div>
+	
+	
+	
+	<footer class="spacingTop">
+		<div class="menu", class="spacingTop">
+			<a class="menuItem" href="#home">home</a>|
+			<a class="menuItem" href="#predictions">predictions</a>|
+			<a class="menuItem" href="#about">about</a>|
+			<a class="menuItem" href="https://github.com/jps-yes/soccer_predictor">github</a>
+		</div>
+		<img class="logo" src="website/images/logo.svg">
+	</footer>
+	
+	<script>
+	function readMore() {
+		var dots = document.getElementById("dots");
+		var moreText = document.getElementById("more");
+		var readMore = document.getElementById("readMore");
+
+		if (dots.style.display === "none") {
+			dots.style.display = "inline";
+			readMore.innerHTML = "Read more"; 
+			moreText.style.display = "none";
+		} else {
+			dots.style.display = "none";
+			readMore.innerHTML = "Read less"; 
+			moreText.style.display = "inline";
+		  }
+		}
+	</script>
+	</body>
+</html>
+	
+
+<!--			
+
+
+		<p>  
+			<sup>
+				<em>automatically updated at 15:00h GMT - 20 Jan, 2021</em>
+			</sup>
+		</p>
+		<h3 id="last-weeks-matches">Last week's matches</h3>
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+		<sup>A lot of these features are overkill for this application, where a medium sized dataset was used.
+			<br/>
+			Again, this was made for the sake of learning, not necessarily to save time or have the best performance ever.
+		</sup>
+	</p>
+</html>
+-->
+
