@@ -15,12 +15,10 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|VfL Osnabruck - Aue|team 1|39.2%|3.4|[betano](https://www.betano.pt/sport/futebol/alemanha/2-bundesliga/217r/)|7.6%|
-|Rapid Vienna - Sturm Graz|team 2|41.4%|3.4|[luckia](https://sports.luckia.pt/sports/futebol/%C3%A1ustria-bundesliga/)|10.7%|
-|B. Monchengladbach - Dortmund|team 2|54.4%|2.1|[betano](https://www.betano.pt/sport/futebol/alemanha/bundesliga/216r/)|5.1%|
+|B. Monchengladbach - Dortmund|team 2|54.4%|2.1|[betano](https://www.betano.pt/sport/futebol/alemanha/bundesliga/216r/)|5.2%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 17:04h GMT - 22 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 18:04h GMT - 22 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
