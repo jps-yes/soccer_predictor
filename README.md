@@ -15,22 +15,15 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|Sydney FC - Central Coast Mariners|team 1|71.1%|1.62|[betano](https://www.betano.pt/sport/futebol/australia/a-league/16816r/)|15.2%|
-|VfL Osnabruck - Aue|team 1|38.6%|3.5|[betano](https://www.betano.pt/sport/futebol/alemanha/2-bundesliga/217r/)|1.5%|
-|Rapid Vienna - Sturm Graz|team 2|45.5%|3.0|[luckia](https://sports.luckia.pt/sports/futebol/%C3%A1ustria-bundesliga/)|5.5%|
 
+&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 01:06h GMT - 22 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 02:33h GMT - 22 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|0.1%|
-|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|4.3%|
-|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|5.1%|
-|:x: Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|luckia|2.2%|
-|:x: Udinese - Atalanta|team 2|59.7%|2.02|betano|7.5%|
-|:heavy_check_mark: Eibar - Atl. Madrid|team 2|62.7%|1.9|betano|9.3%|
+|:heavy_check_mark: Eibar - Atl. Madrid|team 2|62.7%|1.9|betano|1.1%|
 
     
 ## About
