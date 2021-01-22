@@ -15,25 +15,23 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|B. Monchengladbach - Dortmund|team 2|54.4%|2.1|[betano](https://www.betano.pt/sport/futebol/alemanha/bundesliga/216r/)|5.2%|
+|B. Monchengladbach - Dortmund|team 2|54.5%|2.07|[betano](https://www.betano.pt/sport/futebol/alemanha/bundesliga/216r/)|0.3%|
 
 
-&nbsp;&nbsp;<sup>_automatically updated at 18:04h GMT - 22 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 19:07h GMT - 22 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|5.6%|
-|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|7.5%|
-|:x: Portimonense - Belenenses|team 2|35.4%|3.35|luckia|1.6%|
-|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|10.5%|
-|:x: Bayer Leverkusen - Dortmund|team 2|53.9%|2.12|betano|5.1%|
-|:x: Leicester - Chelsea|team 2|45.1%|2.67|betano|5.3%|
-|:x: Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|luckia|8.5%|
-|:x: Udinese - Atalanta|team 2|59.7%|2.02|betano|12.6%|
-|:heavy_check_mark: Fulham - Manchester Utd|team 2|66.4%|1.62|betano|3.3%|
-|:heavy_check_mark: Eibar - Atl. Madrid|team 2|62.7%|1.9|betano|13.7%|
-|:x: Goias - Ceara|team 1|37.5%|3.2|luckia|2.6%|
+|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|2.9%|
+|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|7.9%|
+|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|7.5%|
+|:x: Bayer Leverkusen - Dortmund|team 2|53.9%|2.12|betano|1.2%|
+|:x: Leicester - Chelsea|team 2|45.1%|2.67|betano|0.5%|
+|:x: Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|luckia|4.2%|
+|:x: Udinese - Atalanta|team 2|59.7%|2.02|betano|10.1%|
+|:heavy_check_mark: Fulham - Manchester Utd|team 2|66.4%|1.62|betano|3.0%|
+|:heavy_check_mark: Eibar - Atl. Madrid|team 2|62.7%|1.9|betano|12.1%|
 
     
 ## About
