@@ -15,21 +15,21 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+|Sydney FC - Central Coast Mariners|team 1|71.1%|1.62|[betano](https://www.betano.pt/sport/futebol/australia/a-league/16816r/)|15.5%|
+|VfL Osnabruck - Aue|team 1|38.6%|3.5|[betano](https://www.betano.pt/sport/futebol/alemanha/2-bundesliga/217r/)|1.1%|
+|Rapid Vienna - Sturm Graz|team 2|45.5%|3.0|[luckia](https://sports.luckia.pt/sports/futebol/%C3%A1ustria-bundesliga/)|5.1%|
 
-&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 21:16h GMT - 21 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 00:47h GMT - 22 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:x: Nantes - Lens|team 2|36.3%|3.9|luckia|2.0%|
-|:x: Wolfsberger AC - Sturm Graz|team 2|50.6%|2.6|luckia|6.7%|
-|:heavy_check_mark: Manchester City - Crystal Palace|team 1|82.2%|1.25|luckia|11.5%|
 |:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|4.5%|
-|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|4.9%|
-|:x: Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|luckia|2.0%|
-|:x: Udinese - Atalanta|team 2|59.7%|2.02|betano|7.5%|
+|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|4.8%|
+|:x: Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|luckia|1.9%|
+|:x: Udinese - Atalanta|team 2|59.7%|2.02|betano|7.4%|
+|:heavy_check_mark: Eibar - Atl. Madrid|team 2|62.7%|1.9|betano|9.2%|
 
     
 ## About
