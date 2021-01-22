@@ -1,7 +1,7 @@
 getTodayMatches();
 
-async function getTodayMatches() { // add async ????
-	const matches = await fetch("data.csv");
+async function getTodayMatches() {
+	const matches = await fetch("website/data.csv");
 	const data = await matches.text();
 	console.log(matches);
 }
