@@ -3,8 +3,7 @@ getTodayMatches();
 async function getTodayMatches() { // add async ????
 	const matches = await fetch("data.csv");
 	const data = await matches.text();
-	console.log("matches" + matches);
-        console.log("data" + data);
+	console.log("Hello World");
 }
 
 function readMore() {
