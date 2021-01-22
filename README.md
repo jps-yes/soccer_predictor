@@ -15,15 +15,28 @@ __ROI__: sample size too small
 ### Today's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
+|Sydney FC - Central Coast Mariners|team 1|71.4%|1.6|[betano](https://www.betano.pt/sport/futebol/australia/a-league/16816r/)|15.8%|
+|VfL Osnabruck - Aue|team 1|38.6%|3.5|[betano](https://www.betano.pt/sport/futebol/alemanha/2-bundesliga/217r/)|7.9%|
+|Rapid Vienna - Sturm Graz|team 2|45.5%|3.0|[luckia](https://sports.luckia.pt/sports/futebol/%C3%A1ustria-bundesliga/)|11.7%|
+|B. Monchengladbach - Dortmund|team 2|53.5%|2.1|[luckia](https://sports.luckia.pt/sports/futebol/alemanha-bundesliga/)|3.4%|
 
-&nbsp;&nbsp;No profitable bets were found.
 
-&nbsp;&nbsp;<sup>_automatically updated at 02:33h GMT - 22 Jan, 2021_</sup>
+&nbsp;&nbsp;<sup>_automatically updated at 02:46h GMT - 22 Jan, 2021_</sup>
 
 ### Last week's matches
 |match|bet|p(bet)|odd|best bookmaker|% of bankroll|
 |---  |---|---        |---|---           |---|
-|:heavy_check_mark: Eibar - Atl. Madrid|team 2|62.7%|1.9|betano|1.1%|
+|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|5.6%|
+|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|7.5%|
+|:x: Portimonense - Belenenses|team 2|35.4%|3.35|luckia|1.6%|
+|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|10.5%|
+|:x: Bayer Leverkusen - Dortmund|team 2|53.9%|2.12|betano|5.1%|
+|:x: Leicester - Chelsea|team 2|45.1%|2.67|betano|5.3%|
+|:x: Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|luckia|8.5%|
+|:x: Udinese - Atalanta|team 2|59.7%|2.02|betano|12.6%|
+|:heavy_check_mark: Fulham - Manchester Utd|team 2|66.4%|1.62|betano|3.3%|
+|:heavy_check_mark: Eibar - Atl. Madrid|team 2|62.7%|1.9|betano|13.7%|
+|:x: Goias - Ceara|team 1|37.5%|3.2|luckia|2.6%|
 
     
 ## About
