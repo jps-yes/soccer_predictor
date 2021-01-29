@@ -1,38 +1,4 @@
 # Soccer Predictor
-<sub>__Disclaimer__: This project is solely an exercise on web scraping and machine learning.
-I do not use it to place bets myself, but if you are willing to proceed anyway, first consider that past performance
-does not guarantee further performance. The further to the future we get, the more the conditions the matches are
-played change and the more we are extrapolating from the training dataset. Concretely, new rules might be
-introduced to the game, for instance the introduction of the video assistant referee (VAR). External factors can also
-negatively influence the performance of the model, for example COVID-19 increases the chances of players missing a game.
-Furthermore, the longer before the game begins, the less accurate the prediction will be.</sub>
-
-## Predictions
-__Model__: full time result v1.0</br>
-__ROI__: sample size too small 
-
-
-### Today's matches
-|match|bet|p(bet)|odd|best bookmaker|% of bankroll|
-|---  |---|---        |---|---           |---|
-|B. Monchengladbach - Dortmund|team 2|54.5%|2.07|[betano](https://www.betano.pt/sport/futebol/alemanha/bundesliga/216r/)|0.3%|
-
-
-&nbsp;&nbsp;<sup>_automatically updated at 19:07h GMT - 22 Jan, 2021_</sup>
-
-### Last week's matches
-|match|bet|p(bet)|odd|best bookmaker|% of bankroll|
-|---  |---|---        |---|---           |---|
-|:heavy_check_mark: Fluminense - Sport Recife|team 1|59.6%|1.88|betano|2.9%|
-|:heavy_check_mark: Cagliari - AC Milan|team 2|67.9%|1.62|betano|7.9%|
-|:heavy_check_mark: Palmeiras - Corinthians|team 1|57.7%|2.07|betano|7.5%|
-|:x: Bayer Leverkusen - Dortmund|team 2|53.9%|2.12|betano|1.2%|
-|:x: Leicester - Chelsea|team 2|45.1%|2.67|betano|0.5%|
-|:x: Newcastle Jets - Brisbane Roar|team 1|48.7%|2.55|luckia|4.2%|
-|:x: Udinese - Atalanta|team 2|59.7%|2.02|betano|10.1%|
-|:heavy_check_mark: Fulham - Manchester Utd|team 2|66.4%|1.62|betano|3.0%|
-|:heavy_check_mark: Eibar - Atl. Madrid|team 2|62.7%|1.9|betano|12.1%|
-
     
 ## About
 
