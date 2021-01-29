@@ -1,6 +1,4 @@
-# About
-
-## Predictor
+# Predictor
 * Collects and preprocesses input data for the neural network;
 * Deploys neural network obtaining the probability of each match outcome;
 * Collects odds from legal portuguese bookmakers, compares and determines best odd;</br>
@@ -19,7 +17,7 @@ Currently implemented:
 - Calculates the [Kelly criterion](https://en.wikipedia.org/wiki/Kelly_criterion) to determine the bankroll percentage 
 to wager.
 
-## Neural network trainer
+# Neural network trainer
 The neural network was implemented mostly from scratch in Matlab, although some code snippets were used as provided by 
 [Andrew Ng's machine learning course](https://www.coursera.org/learn/machine-learning).
 
