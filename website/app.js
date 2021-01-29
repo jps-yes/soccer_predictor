@@ -24,7 +24,7 @@ async function getTodaysMatches() {
 		// table body
 		var tbody = table.appendChild(document.createElement("tBody"));
 		for (var i = 0; i<matchesFound.length; i++) {
-			var vals = matchesFound[i].split(";");
+			var vals = matchesFound[i].split(",");
 			var match = vals[1] + " - " + vals[2];
 			var bet = ["team1", "team2", "tie"];
 			for (var k = 0; k < 3; k++) {
@@ -73,7 +73,7 @@ async function getPastMatches() {
 		// table body
 		var tbody = table.appendChild(document.createElement("tBody"));
 		for (var i = 0; i<matchesFound.length; i++) {
-			var vals = matchesFound[i].split(";");
+			var vals = matchesFound[i].split(",");
 			var match = vals[1] + " - " + vals[2];
 			var bet = ["team1", "team2", "tie"];
 			for (var k = 0; k < 3; k++) {
@@ -132,7 +132,7 @@ function findMatches(rows, dates) {
 	// dates is an array
 	var matchesFound = new Array();
 	for (var i=0; i<rows.length; i++) {
-		row = rows[i].split(';');
+		row = rows[i].split(',');
 		if (dates.includes(row[0])) {
 			matchesFound.push(rows[i]);
 		}
@@ -146,9 +146,10 @@ async function getRoi() {
 	const matches = await fetch("website/"+ model +".csv");
 	const data = await matches.text();
 	const rows = data.split("\n");
-	row = rows[0].split(';');
+	row = rows[0].split(',');
+	console.log(row[25]);
 	if (row[25]>=minMatches) {
-		var roi = ' ' + row[24] + ' (in ' + row[25] + ' bets)';
+		var roi = ' ' + (row[24]*100).toFixed(2) + '% (in ' + row[25] + ' bets)';
 	} else {
 		var roi = ' sample size too small';
 	}

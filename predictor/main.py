@@ -3,7 +3,7 @@ import time
 from bet_history import *
 from bookmaker_scraper import *
 from data_merger import *
-from github_updater import *  # --- This file is private (contains credentials)
+from github_updater import *  # --- !!! This file is private (contains credentials)
 from kelly_criterion import *
 from predict import *
 
@@ -27,7 +27,7 @@ def main():
             percentage = kelly_criterion(prob, odds, model_name)
             print(percentage)
         # Updates github README.md
-        github_updater(model_list)  # --- This file is private (contains credentials)
+        github_updater(model_list)  # --- !!! This file is private (contains credentials)
         if prob.size == 0:
             print('No more matches for today.')
             break
