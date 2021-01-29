@@ -126,6 +126,7 @@ def data_merger():
             data_538[match]['adj_score1'], data_538[match]['adj_score2'], data_538[match]['date'], \
             data_538[match]['season'], data_538[match]['league']
 
+        found = False
         for match2 in data_oddsportal:
             found = False
             days = [float(data_oddsportal[match2]['match_day'])]

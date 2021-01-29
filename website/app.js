@@ -108,7 +108,7 @@ async function getPastMatches() {
 	}
 	if (matchesFound.length == 0 || typeof td == 'undefined') {
 		todayDiv.innerHTML = "";
-		todayDiv.appendChild(document.createElement("SPAN")).textContent = "No potentially profitable matches were found last week."
+		todayDiv.appendChild(document.createElement("SPAN")).textContent = "No potentially profitable matches were found for last week."
 	}
 }
 
@@ -141,7 +141,7 @@ function findMatches(rows, dates) {
 }
 
 async function getRoi() {
-	const minMatches = 30;
+	const minMatches = 20;
 	var model = document.getElementById("models").value;
 	const matches = await fetch("website/"+ model +".csv");
 	const data = await matches.text();

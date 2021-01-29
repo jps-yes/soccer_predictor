@@ -158,7 +158,7 @@ def data_matcher(matches, url_found):
             continue
         score = 0
         match_actual = row[0].value + ' - ' + row[1].value
-        # EXCEPTIONS
+        # EXCEPTIONS ###################################################################################################
         #
         #
         match_actual = match_actual.replace('QPR', 'Queens Park Rangers')
@@ -172,12 +172,15 @@ def data_matcher(matches, url_found):
         match_actual = match_actual.replace('Nacional', 'CD Nacional')
         match_actual = match_actual.replace('Club Brugge KV', 'Club Brugge')
         match_actual = match_actual.replace('Beerschot VA', 'KFCO Beerschot VA')
+        match_actual = match_actual.replace('Alaves', 'Alavés')
+        match_actual = match_actual.replace('Erzgebirge', 'Aue Erzgebirge')
         ###################
-        for match in matches.keys():
-            if similar(match_actual, match) >= score:
-                score = similar(match_actual, match)
-                match_found = match
-        print(str(score) + ': ' + match_actual + '-->' + match_found)
+        if len(matches) > 0:
+            for match in matches.keys():
+                if similar(match_actual, match) >= score:
+                    score = similar(match_actual, match)
+                    match_found = match
+            print(str(score) + ': ' + match_actual + '-->' + match_found)
         if score >= 0.55:
             ordered_odds.append(matches[match_found])
             urls.append(url_found[match_found])

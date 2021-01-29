@@ -2,8 +2,12 @@ chromedriver.exe
 .idea
 __pycache__
 merged_data.xlsx
-bet_history.xlsx
 team_dict.txt
 merged_data.json
 spi_matches_latest.csv
 data_oddsportal.json
+github_updater.py
+run_soccer_predictor.BAT
+modelA.csv
+modelB.csv
+modelC.csv

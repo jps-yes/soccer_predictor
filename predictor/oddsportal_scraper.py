@@ -84,8 +84,13 @@ def get_results(url_league, data):
         # IF IT IS A DATE ROW
         if attributes[0] == 'center':
             match_date = row.select('span[class*="datet "]')[0].get_text()
-            if 'Yesterday' not in match_date and 'Today' not in match_date:
-                break
+            if 'Yesterday' in match_date or 'Today' in match_date:
+                pass
+            else:
+                match_date = datetime.strptime(match_date, '%d %b %Y')
+                last_week = (datetime.now()-timedelta(8))
+                if match_date < last_week:
+                    break
         # IF IT IS A MATCH ROW
         elif attributes[0] == 'odd' or attributes[0] == 'deactivate':
             identifier += 1
