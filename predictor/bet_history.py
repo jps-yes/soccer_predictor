@@ -111,7 +111,7 @@ def simple_evolutionary_optimization(sheet):
     best_cost = sheet.range('AI2').value
     param1 = sheet.range('AB1').value
     param2 = sheet.range('AC1').value
-    while i < 10:
+    while i < 30:
         param1_list = np.random.uniform(low=max(.5, param1/1.1), high=min(2, param1*1.1), size=(85, 1))
         param1_list = np.concatenate((param1_list, np.random.uniform(low=.5, high=2, size=(15, 1)))).tolist()
         param2_list = np.random.uniform(low=max(.5, param2/1.1), high=min(2, param2*1.1), size=(85, 1))

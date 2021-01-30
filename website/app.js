@@ -26,14 +26,14 @@ async function getTodaysMatches() {
 		for (var i = 0; i<matchesFound.length; i++) {
 			var vals = matchesFound[i].split(",");
 			var match = vals[1] + " - " + vals[2];
-			var bet = ["team1", "team2", "tie"];
+			var bets = ["team1", "team2", "tie"];
 			for (var k = 0; k < 3; k++) {
 				var bankroll = (vals[16+k]*100).toFixed(2);
 				if (bankroll<=0) {
 					continue;
 				}
 				bankroll = bankroll + "%";
-				var bet = bet[k];
+				var bet = bets[k];
 				var pBet = (vals[4+k]*100).toFixed(2) + "%";
 				var odd = vals[7+k];
 				var bookmaker = vals[10+k];
@@ -75,14 +75,14 @@ async function getPastMatches() {
 		for (var i = 0; i<matchesFound.length; i++) {
 			var vals = matchesFound[i].split(",");
 			var match = vals[1] + " - " + vals[2];
-			var bet = ["team1", "team2", "tie"];
+			var bets = ["team1", "team2", "tie"];
 			for (var k = 0; k < 3; k++) {
 				var bankroll = (vals[16+k]*100).toFixed(2);
 				if (bankroll<=0) {
 					continue;
 				}
 				 bankroll = bankroll + "%";
-				var bet = bet[k];
+				var bet = bets[k];
 				var pBet = (vals[4+k]*100).toFixed(2) + "%";
 				var odd = vals[7+k];
 				var bookmaker = vals[10+k];

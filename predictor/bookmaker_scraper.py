@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options
 from dictionaries import *
 
 global bookmaker
-
+import time
 
 def start_driver(visible=False):
     # STARTS CHROMEDRIVER
@@ -30,7 +30,13 @@ def luckia_scraper():
     driver = start_driver(visible=False)
     for url in url_list:
         driver.get(url)
+        t0 = time.time()
         while True:
+            t1 = time.time()
+            total = t1 - t0
+            if total > 3:
+                driver.get(url)
+                t0 = time.time()
             page = driver.page_source
             soup = BeautifulSoup(page, 'html.parser')
             if not soup.find_all('div', {'class': 'rj-ev-list__ev-card__inner'}):

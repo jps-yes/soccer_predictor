@@ -60,7 +60,7 @@ end
 x.numLayers = 3; % number of hidden layers
 x.nIter = 4; % number if epoch iterations
 x.lambda = .1; % lambda for L2 regularization
-x.dropout_prob = .25; % dropout probability for dropout regularization
+x.dropout_prob = .0; % dropout probability for dropout regularization
 x.layersShape = 1; % shape of network, 1: the number of elements in each layers decreases linearly
 x.lambda2 = 100; % this value is summed to kelly criterion weight in the cost function
 x.alpha_div = 10; % division constant in automatic alpha finder.

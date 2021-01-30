@@ -68,7 +68,6 @@ for i = 1:length(layers)-1
 end
 
 %% COST FUNCTION
-%J = 1/m *sum(-sum(   Y .* log(a{end})   ));
 f = a{end} - (1-a{end})./(Odds-1) + lambda2;
 f = (f>0).*f;
 J = 1/m *sum(-sum(   Y.*log(a{end}) .* f   ));
@@ -79,11 +78,10 @@ end
 
 %% BACKPROPAGATION
 % Step 2 - calculate lambda
-
 aux_term1 = sum(     (f.*Y)   ,2);
 aux_term2 = sum(     (f>0).*(Y.*log(a{end}).*(Odds)./(Odds-1).*a{end})   ,2);
 dz_norm{length(layers)} =   (aux_term1.*a{end}-(f.*Y)) - ((f>0).*(Y.*log(a{end}).*(Odds)./(Odds-1).*a{end}) - a{end}.*aux_term2);
-%dz_norm{length(layers)} = a{end}-Y;
+%dz_norm{length(layers)} =   (aux_term1.*a{end}-(f.*Y)) - ((f>0).*(Y.*log(a{end}).*(Odds)./(Odds-1).*a{end}) - a{end}.*aux_term2);
 
 % batch norm
 divar{length(layers)} = sum(z_mu{length(layers)} .* dz_norm{length(layers)});
