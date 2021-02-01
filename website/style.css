@@ -19,7 +19,7 @@ html {
 p {
 	padding: 0px;
 	margin: 0px;
-	padding-top: 5px;
+	padding-top: 0px;
 }
 
 ul {
@@ -111,7 +111,7 @@ select  {
 	font-weight: bold;
 	font-size: 20px;
 	padding-bottom: 10px;
-	padding-top: 15px;
+	padding-top: 25px;
 	color: rgb(91, 142, 40);
 	letter-spacing: 6px;
 }
