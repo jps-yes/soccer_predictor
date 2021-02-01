@@ -111,11 +111,12 @@ def simple_evolutionary_optimization(sheet):
     best_cost = sheet.range('AI2').value
     param1 = sheet.range('AB1').value
     param2 = sheet.range('AC1').value
-    while i < 30:
-        param1_list = np.random.uniform(low=max(.5, param1/1.1), high=min(2, param1*1.1), size=(85, 1))
-        param1_list = np.concatenate((param1_list, np.random.uniform(low=.5, high=2, size=(15, 1)))).tolist()
-        param2_list = np.random.uniform(low=max(.5, param2/1.1), high=min(2, param2*1.1), size=(85, 1))
-        param2_list = np.concatenate((param2_list, np.random.uniform(low=.5, high=2, size=(15, 1)))).tolist()
+    threshold = 2**20
+    while i < threshold:
+        param1_list = np.random.uniform(low=max(.5, param1/1.2), high=min(2, param1*1.2), size=(95, 1))
+        param1_list = np.concatenate((param1_list, np.random.uniform(low=.5, high=2, size=(5, 1)))).tolist()
+        param2_list = np.random.uniform(low=max(.5, param2/1.2), high=min(2, param2*1.2), size=(95, 1))
+        param2_list = np.concatenate((param2_list, np.random.uniform(low=.5, high=2, size=(5, 1)))).tolist()
         best_cost2 = -9999999999999999999
         for k in range(len(param1_list)):
             sheet.range('AB1').value = param1_list[k][0]
@@ -131,6 +132,7 @@ def simple_evolutionary_optimization(sheet):
             param2 = best_param2
             i = 0
         else:
-            i += 1
+            i += i+1
+        print(str(round(i/threshold*100, 0)) + '%')
     sheet.range('AB1').value = param1
     sheet.range('AC1').value = param2

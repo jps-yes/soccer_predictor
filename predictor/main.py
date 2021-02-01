@@ -18,6 +18,7 @@ def main():
         # Scrapes various bookmakers and returns best odds
         odds, bookmakers, urls = best_bookmaker()
         for model_name in model_list:
+            print('--- ' + model_name + ' ---')
             prob, _ = predict(model_name)
             if prob.size == 0:
                 break

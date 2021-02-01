@@ -180,6 +180,8 @@ def data_matcher(matches, url_found):
         match_actual = match_actual.replace('Beerschot VA', 'KFCO Beerschot VA')
         match_actual = match_actual.replace('Alaves', 'Alavés')
         match_actual = match_actual.replace('Erzgebirge', 'Aue Erzgebirge')
+        match_actual = match_actual.replace('Tirol', 'WSG Swarovski Tirol')
+        match_actual = match_actual.replace('Vasco', 'Vasco Da Gama')
         ###################
         if len(matches) > 0:
             for match in matches.keys():
@@ -187,7 +189,7 @@ def data_matcher(matches, url_found):
                     score = similar(match_actual, match)
                     match_found = match
             print(str(score) + ': ' + match_actual + '-->' + match_found)
-        if score >= 0.55:
+        if score >= 0.60:
             ordered_odds.append(matches[match_found])
             urls.append(url_found[match_found])
         else:

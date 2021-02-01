@@ -6,7 +6,6 @@
 
 
 html {
-	max-width: 800px;
 	min-width: 320px;
 	margin: 0 auto;
     background-image:url('images/background.jpg');
@@ -16,9 +15,10 @@ html {
 	padding: 0px;	
 }
 
-a {
-	text-decoration: none;
-	color: rgb(31, 132, 180);
+@media only screen and (min-width: 801px) {
+	html {
+		max-width: 800px;
+	}
 }
 
 p {

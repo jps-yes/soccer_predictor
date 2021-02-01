@@ -37,7 +37,8 @@ def get_odds(url_league, data):
             data[identifier] = {}
             # FILLS ATTRIBUTES FOR THIS MATCH
             if len(row.find_all('span', {'class': 'live-odds-ico-prev'})) == 0\
-                    and len(row.find_all('td', {'class': 'center bold table-odds table-score'})) == 0:
+                    and len(row.find_all('td', {'class': 'center bold table-odds table-score'})) == 0\
+                    and r"'" not in row.select('td[class*="table-time datet "]')[0].get_text():
                 data[identifier]['matchTime'] = str(
                     float(time_regex.search(row.select('td[class*="table-time datet "]')[0].get_text()).group(1)) +
                     float(time_regex.search(row.select('td[class*="table-time datet "]')[0].get_text()).group(2)) / 60)

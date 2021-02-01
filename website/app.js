@@ -147,7 +147,6 @@ async function getRoi() {
 	const data = await matches.text();
 	const rows = data.split("\n");
 	row = rows[0].split(',');
-	console.log(row[25]);
 	if (row[25]>=minMatches) {
 		var roi = ' ' + (row[24]*100).toFixed(2) + '% (in ' + row[25] + ' bets)';
 	} else {
