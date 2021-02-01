@@ -1,4 +1,4 @@
-# [WEBSITE](https://jps-yes.github.io/soccer_predictor/)
+# Website: [https://jps-yes.github.io/soccer_predictor/](https://jps-yes.github.io/soccer_predictor/)
 
 # Predictor
 * Collects and preprocesses input data for the neural network;
