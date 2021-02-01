@@ -4,8 +4,14 @@
 	font-style: normal;
 }
 
+.page-wrap { width: 80%; }
+
+@media (max-width: 600px) {
+  .resp .page-wrap { width: 100%; }
+}
 
 html {
+	max-width: 1000px;
 	min-width: 320px;
 	margin: 0 auto;
     background-image:url('images/background.jpg');
@@ -15,11 +21,6 @@ html {
 	padding: 0px;	
 }
 
-@media only screen and (min-width: 801px) {
-	html {
-		max-width: 800px;
-	}
-}
 
 p {
 	padding: 0px;
@@ -151,10 +152,10 @@ select  {
 
 
 .logo {
-	width: 250px;
-	display: block;
+	width: 255px;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 	padding: 20px;
 }
 
