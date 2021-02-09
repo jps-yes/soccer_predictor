@@ -26,7 +26,7 @@ def bet_history(prob, odds, bookmakers, model_name):
     league_without_result = []
     for row in sheet_history.iter_rows(min_row=2):
         id_history.append([row[0].value, row[1].value, row[2].value])
-        if row[15].value is None and row[0].value == (datetime.now() - timedelta(1)).strftime('%d-%m-%Y'):
+        if row[15].value is None:
             id_history_without_result.append([row[0].value, row[1].value, row[2].value])
             if str(row[3].value) not in league_without_result:
                 league_without_result.append(str(row[3].value))
@@ -60,7 +60,7 @@ def bet_history(prob, odds, bookmakers, model_name):
                 j += 1
             id_today = [row[18].value + '-' + row[19].value + '-' + row[20].value, row[0].value, row[1].value]
             if id_today not in id_history:  # appends data if item does not exist
-                sheet_history.append(id_today + [league_id] + prob[i - 1].tolist() + odds[i - 1].tolist())
+                sheet_history.append(id_today + [league_id] + prob[i - 1].tolist() + odds[i - 1].tolist() + bookmakers[i - 1])
             else:  # updates data if item already exists
                 index = id_history.index(id_today)
                 sheet_history.cell(index + 2, 5).value = prob[i-1][0]
@@ -87,12 +87,23 @@ def bet_history(prob, odds, bookmakers, model_name):
     formula = sheet.range('Q2').formula
     cells_copy = 'Q2:' + 'S' + str(i-1)
     sheet.range(cells_copy).formula = formula
+
     formula = sheet.range('T2').formula
     cells_copy = 'T2:' + 'V' + str(i-1)
     sheet.range(cells_copy).formula = formula
+
+    formula = sheet.range('AL2').formula
+    cells_copy = 'AL2:' + 'AN' + str(i-1)
+    sheet.range(cells_copy).formula = formula
+
+    formula = sheet.range('AO2').formula
+    cells_copy = 'AO2:' + 'AQ' + str(i-1)
+    sheet.range(cells_copy).formula = formula
+
     sheet.range('AB1:AC1').value = sheet.range('AB3:AC3').value
     sheet.range('AD3:AF3').value = sheet.range('AD1:AF1').value
     simple_evolutionary_optimization(sheet)
+
     while True:
         cell = 'A' + str(i)
         if sheet[cell].value is None:
@@ -112,10 +123,10 @@ def simple_evolutionary_optimization(sheet):
     param1 = sheet.range('AB1').value
     param2 = sheet.range('AC1').value
     threshold = 2**20
-    while i < threshold:
-        param1_list = np.random.uniform(low=max(.5, param1/1.2), high=min(2, param1*1.2), size=(95, 1))
+    while i <= threshold:
+        param1_list = np.random.uniform(low=max(.5, param1/1.05), high=min(2, param1*1.05), size=(45, 1))
         param1_list = np.concatenate((param1_list, np.random.uniform(low=.5, high=2, size=(5, 1)))).tolist()
-        param2_list = np.random.uniform(low=max(.5, param2/1.2), high=min(2, param2*1.2), size=(95, 1))
+        param2_list = np.random.uniform(low=max(.5, param2/1.05), high=min(2, param2*1.05), size=(45, 1))
         param2_list = np.concatenate((param2_list, np.random.uniform(low=.5, high=2, size=(5, 1)))).tolist()
         best_cost2 = -9999999999999999999
         for k in range(len(param1_list)):

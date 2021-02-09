@@ -15,6 +15,7 @@ def main():
         data_merger()
         # Loads the model parameters from .mat file (neural network trained in Matlab) and predicts probability
         model_list = ['modelA', 'modelB', 'modelC']
+        #model_list = ['modelC']
         # Scrapes various bookmakers and returns best odds
         odds, bookmakers, urls = best_bookmaker()
         for model_name in model_list:
