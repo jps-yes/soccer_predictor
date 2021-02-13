@@ -185,6 +185,12 @@ def data_matcher(matches, url_found):
         match_actual = match_actual.replace('Gijon', 'Sporting Gijón')
         match_actual = match_actual.replace('Brest', 'Stade Brestois')
         match_actual = match_actual.replace('Bordeaux', 'Bordéus')
+        match_actual = match_actual.replace('Entella', 'Virtus Entella')
+        match_actual = match_actual.replace('Reggina', 'Urbs Sportiva Reggina')
+        match_actual = match_actual.replace('Erzurum BB', 'Erzurum Buyuksehir')
+        match_actual = match_actual.replace('Hamburger SV', 'Hamburgo')
+
+
         ###################
         if len(matches) > 0:
             for match in matches.keys():
