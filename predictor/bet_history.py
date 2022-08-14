@@ -102,6 +102,7 @@ def bet_history(prob, odds, bookmakers, model_name):
 
     sheet.range('AB1:AC1').value = sheet.range('AB3:AC3').value
     sheet.range('AD3:AF3').value = sheet.range('AD1:AF1').value
+    sheet.range('Z3').value = sheet.range('Z1').value
     simple_evolutionary_optimization(sheet)
 
     while True:
@@ -122,12 +123,10 @@ def simple_evolutionary_optimization(sheet):
     best_cost = sheet.range('AI2').value
     param1 = sheet.range('AB1').value
     param2 = sheet.range('AC1').value
-    threshold = 2**30
+    threshold = 2**300
     while i <= threshold:
-        param1_list = np.random.uniform(low=max(.5, param1/1.03), high=min(2, param1*1.03), size=(45, 1))
-        param1_list = np.concatenate((param1_list, np.random.uniform(low=.5, high=2, size=(5, 1)))).tolist()
-        param2_list = np.random.uniform(low=max(.5, param2/1.03), high=min(2, param2*1.03), size=(45, 1))
-        param2_list = np.concatenate((param2_list, np.random.uniform(low=.5, high=2, size=(5, 1)))).tolist()
+        param1_list = np.random.uniform(low=max(.5, param1/1.001), high=min(2, param1*1.001), size=(2, 1))
+        param2_list = np.random.uniform(low=max(.5, param2/1.001), high=min(2, param2*1.001), size=(2, 1))
         best_cost2 = -9999999999999999999
         for k in range(len(param1_list)):
             sheet.range('AB1').value = param1_list[k][0]
@@ -144,6 +143,6 @@ def simple_evolutionary_optimization(sheet):
             i = 0
         else:
             i += i+1
-        print(str(round(i/threshold*100, 0)) + '%')
+        print(str(round(i/threshold*50, 0)) + '%')
     sheet.range('AB1').value = param1
     sheet.range('AC1').value = param2

@@ -8,6 +8,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 from dictionaries import league_to_url_dictionary
+import global_settings
 
 
 def get_odds(url_league, data):
@@ -36,12 +37,17 @@ def get_odds(url_league, data):
             identifier += 1
             data[identifier] = {}
             # FILLS ATTRIBUTES FOR THIS MATCH
-            if len(row.find_all('span', {'class': 'live-odds-ico-prev'})) == 0\
-                    and len(row.find_all('td', {'class': 'center bold table-odds table-score'})) == 0\
-                    and r"'" not in row.select('td[class*="table-time datet "]')[0].get_text():
+            match_time_row = row.select('td[class*="table-time datet "]')
+            if not match_time_row:
+                del data[identifier]
+                identifier -= 1
+                continue
+            if len(row.find_all('span', {'class': 'live-odds-ico-prev'})) == 0 \
+                    and len(row.find_all('td', {'class': 'center bold table-odds table-score'})) == 0 \
+                    and r"'" not in match_time_row[0].get_text():
                 data[identifier]['matchTime'] = str(
-                    float(time_regex.search(row.select('td[class*="table-time datet "]')[0].get_text()).group(1)) +
-                    float(time_regex.search(row.select('td[class*="table-time datet "]')[0].get_text()).group(2)) / 60)
+                    float(time_regex.search(match_time_row[0].get_text()).group(1)) +
+                    float(time_regex.search(match_time_row[0].get_text()).group(2)) / 60)
             else:
                 # MATCH CURRENTLY HAPPENING
                 del data[identifier]
@@ -76,58 +82,76 @@ def get_results(url_league, data):
     page = driver.page_source
     soup = BeautifulSoup(page, 'html.parser')
     identifier = len(data)
-    for row in soup.table.tbody.find_all('tr'):
-        try:
-            attributes = row.attrs['class']
-        except KeyError:
-            attributes = ['odd']
-        attributes.append('filler')
-        # IF IT IS A DATE ROW
-        if attributes[0] == 'center':
-            match_date = row.select('span[class*="datet "]')[0].get_text()
-            if 'Yesterday' in match_date or 'Today' in match_date:
-                pass
-            else:
-                match_date = datetime.strptime(match_date, '%d %b %Y')
-                last_week = (datetime.now()-timedelta(8))
-                if match_date < last_week:
-                    break
-        # IF IT IS A MATCH ROW
-        elif attributes[0] == 'odd' or attributes[0] == 'deactivate':
-            identifier += 1
-            data[identifier] = {}
-            # FILLS ATTRIBUTES FOR THIS MATCH
-            data[identifier]['date'] = (datetime.now() - timedelta(1)).strftime('%d-%m-%Y')
-            data[identifier]['team1'] = team_regex.search(
-                row.find_all('td', {'class': 'name table-participant'})[0].get_text()).group(1)
-            data[identifier]['team2'] = team_regex.search(
-                row.find_all('td', {'class': 'name table-participant'})[0].get_text()).group(2)
-            data[identifier]['team1'] = data[identifier]['team1'].replace(u'\xa0', u'')
-            data[identifier]['team2'] = data[identifier]['team2'].replace(u'\xa0', u'')
+    try:
+        for row in soup.table.tbody.find_all('tr'):
             try:
-                score_str = row.find_all('td', {'class': 'table-score'})[0].get_text()
-                if ':' in score_str:
-                    score = score_str.split(':')
-                else:  # match was postponed
+                attributes = row.attrs['class']
+            except KeyError:
+                attributes = ['odd']
+            attributes.append('filler')
+            # IF IT IS A DATE ROW
+            if attributes[0] == 'center':
+                match_date = row.select('span[class*="datet "]')[0].get_text()
+                if 'Yesterday' in match_date or 'Today' in match_date:
+                    pass
+                else:
+                    match_date = datetime.strptime(match_date, '%d %b %Y')
+                    last_week = (datetime.now()-timedelta(8))
+                    if match_date < last_week:
+                        break
+            # IF IT IS A MATCH ROW
+            elif attributes[0] == 'odd' or attributes[0] == 'deactivate':
+                identifier += 1
+                data[identifier] = {}
+                # FILLS ATTRIBUTES FOR THIS MATCH
+                try:
+                    data[identifier]['date'] = (datetime.now() - timedelta(1)).strftime('%d-%m-%Y')
+                    data[identifier]['team1'] = team_regex.search(
+                        row.find_all('td', {'class': 'name table-participant'})[0].get_text()).group(1)
+                    data[identifier]['team2'] = team_regex.search(
+                        row.find_all('td', {'class': 'name table-participant'})[0].get_text()).group(2)
+                    data[identifier]['team1'] = data[identifier]['team1'].replace(u'\xa0', u'')
+                    data[identifier]['team2'] = data[identifier]['team2'].replace(u'\xa0', u'')
+                    score_str = row.find_all('td', {'class': 'table-score'})[0].get_text()
+                    if ':' in score_str:
+                        score = score_str.split(':')
+                    else:  # match was postponed
+                        print("Results: ", data[identifier]['team1'], " - ", data[identifier]['team2'], ": match postponed")
+                        if global_settings.debug_mode:
+                            input("Press ENTER to continue...")
+                        del data[identifier]
+                        identifier -= 1
+                        continue
+                except IndexError:  # match in play
+                    print("Results: ", data[identifier]['team1'], " - ", data[identifier]['team2'], ": match in play")
+                    if global_settings.debug_mode:
+                        input("Press ENTER to continue...")
                     del data[identifier]
                     identifier -= 1
                     continue
-            except IndexError:  # match in play
-                del data[identifier]
-                identifier -= 1
-                continue
-            if int(score[0]) > int(score[1]):
-                data[identifier]['win1'] = 1
-                data[identifier]['win2'] = 0
-                data[identifier]['tie'] = 0
-            elif int(score[0]) < int(score[1]):
-                data[identifier]['win1'] = 0
-                data[identifier]['win2'] = 1
-                data[identifier]['tie'] = 0
-            else:
-                data[identifier]['win1'] = 0
-                data[identifier]['win2'] = 0
-                data[identifier]['tie'] = 1
+                score[0] = score[0].replace(u'\xa0', '')
+                score[0] = score[0].replace('ET', '')
+                score[0] = score[0].replace('pen.', '')
+                score[1] = score[1].replace(u'\xa0', '')
+                score[1] = score[1].replace('ET', '')
+                score[1] = score[1].replace('pen.', '')
+
+                print("Results: ", data[identifier]['team1'], " ", score[0],
+                      " - ",       data[identifier]['team2'], " ", score[1])
+                if int(score[0]) > int(score[1]):
+                    data[identifier]['win1'] = 1
+                    data[identifier]['win2'] = 0
+                    data[identifier]['tie'] = 0
+                elif int(score[0]) < int(score[1]):
+                    data[identifier]['win1'] = 0
+                    data[identifier]['win2'] = 1
+                    data[identifier]['tie'] = 0
+                else:
+                    data[identifier]['win1'] = 0
+                    data[identifier]['win2'] = 0
+                    data[identifier]['tie'] = 1
+    except AttributeError:  # page could not be loaded
+        pass
 
     return data
 
@@ -137,8 +161,8 @@ def oddsportal_scraper(leagueid_list, scrape_results=False):
     global driver
     options = Options()
     options.add_argument("--log-level=3")
-    options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
+    #options.add_argument('--headless')
+    #options.add_argument('--disable-gpu')
     driver = webdriver.Chrome(options=options)
     data_oddsportal = {}
     league_dict = league_to_url_dictionary('oddsportal')

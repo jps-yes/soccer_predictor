@@ -1,6 +1,7 @@
 import csv
 import unidecode
 from datetime import datetime
+from datetime import timedelta
 
 import requests
 
@@ -17,18 +18,23 @@ def save_file_538():
             file.close()
 
 
-def get_today_matches():
+def get_matches_for_next_n_days(days):
     with open(r'.\spi_matches_latest.csv') as csvFile:
         reader = csv.reader(csvFile, delimiter=',')
         csv_data = {}
         today = datetime.today().strftime('%Y-%m-%d')
+        dates = []
+        for day in range(days):
+            date = datetime.today() + timedelta(days=day)
+            date_str = date.strftime('%Y-%m-%d')
+            dates.append(date_str)
         i = 0
         for row in reader:
             if i == 0:
                 headers = list(row)
                 i += 1
                 continue
-            elif row[1] != today or row[15] != '':   # Skips if date is not today OR match already has a score
+            elif not(row[1] in dates) or row[15] != '':   # Skips if date is not today OR match already has a score
                 continue
             if row[13] == '' or row[14] == '':  # Skips if importance coefficient doesn't exist
                 continue

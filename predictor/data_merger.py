@@ -63,7 +63,7 @@ def data_merger():
     team_dict = team_dictionary()
     # GETS DATA FROM 538
     save_file_538()
-    data_538 = get_today_matches()
+    data_538 = get_matches_for_next_n_days(30)
     # GETS DATA FROM ODDSPORTAL
     leagueid_list = []
     for match in data_538:

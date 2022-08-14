@@ -1,4 +1,5 @@
 import time
+import global_settings
 
 from bet_history import *
 from bookmaker_scraper import *
@@ -9,6 +10,7 @@ from predict import *
 
 
 def main():
+    global_settings.init()
     while True:
         np.set_printoptions(formatter={'float_kind': '{:f}'.format})
         # Gets data from 538 and oddsportal, merges and saves it into "merged_data.json"

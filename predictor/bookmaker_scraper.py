@@ -6,9 +6,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 from dictionaries import *
+import global_settings
 
 global bookmaker
 import time
+
 
 def start_driver(visible=False):
     # STARTS CHROMEDRIVER
@@ -27,8 +29,9 @@ def luckia_scraper():
     url_list, _ = get_todays_leagues()
     matches = {}
     url_found = {}
-    driver = start_driver(visible=False)
+    driver = start_driver(visible=True)
     for url in url_list:
+        tries = 0
         driver.get(url)
         t0 = time.time()
         while True:
@@ -39,7 +42,10 @@ def luckia_scraper():
                 t0 = time.time()
             page = driver.page_source
             soup = BeautifulSoup(page, 'html.parser')
+            if tries > 10:
+                break
             if not soup.find_all('div', {'class': 'rj-ev-list__ev-card__inner'}):
+                tries += 1
                 continue
             for match in soup.find_all('div', {'class': 'rj-ev-list__ev-card__inner'}):
                 if match.find_all('div', {'rj-ev-list__ev-card__section-item rj-ev-list__ev-card__scores'}):
@@ -48,9 +54,9 @@ def luckia_scraper():
                 team2 = match.find_all('span', {'class': 'rj-ev-list__name-text'})[1].get_text()
                 odds = match.find_all('span', {'class': 'rj-ev-list__bet-btn__content rj-ev-list__bet-btn__odd'})
                 if len(odds) == 3:
-                    matches[team1 + ' - ' + team2] = [float(odds[0].get_text()),  # odd1
-                                                      float(odds[2].get_text()),  # odd2
-                                                      float(odds[1].get_text())]  # tie
+                    matches[team1 + ' - ' + team2] = [float(odds[0].get_text().replace(',', '.')),  # odd1
+                                                      float(odds[2].get_text().replace(',', '.')),  # odd2
+                                                      float(odds[1].get_text().replace(',', '.'))]  # tie 
                     url_found[team1 + ' - ' + team2] = [url, url, url]
             break
     driver.quit()
@@ -63,23 +69,22 @@ def betano_scraper():
     url_list, _ = get_todays_leagues()
     matches = {}
     url_found = {}
-    driver = start_driver(visible=False)
+    driver = start_driver(visible=True)
     for url in url_list:
         driver.get(url)
         while True:
             page = driver.page_source
             soup = BeautifulSoup(page, 'html.parser')
-            if not soup.find_all('tr', {'category': 'FOOT'}):
-                continue
-            for match in soup.find_all('tr', {'category': 'FOOT'}):
-                team1 = match.find_all('span', {'class': 'events-list__grid__info__main__participants__name'})[
+            for match in soup.find_all('tr', {'class': 'events-list__grid__event'}):
+                team1 = match.find_all('span', {'class': 'events-list__grid__info__main__participants__participant-name'})[
                     0].get_text().strip()
-                team2 = match.find_all('span', {'class': 'events-list__grid__info__main__participants__name'})[
+                team2 = match.find_all('span', {'class': 'events-list__grid__info__main__participants__participant-name'})[
                     1].get_text().strip()
                 sections = match.find_all('section')
                 odds = []
                 for section in sections:
-                    if section.find('div', {'class', 'table__markets__market__title__text'}).get_text() == 'Resultado Final':
+                    section_label = section.find('div', {'class', 'table__markets__market__title__text'}).get_text()
+                    if 'Resultado Final' in section_label:
                         odds = section.find_all('span', {'class': 'selections__selection__odd'})
                 if len(odds) == 3:
                     matches[team1 + ' - ' + team2] = [float(odds[0].get_text().replace('-', '1')),  # odd1
@@ -189,7 +194,11 @@ def data_matcher(matches, url_found):
         match_actual = match_actual.replace('Reggina', 'Urbs Sportiva Reggina')
         match_actual = match_actual.replace('Erzurum BB', 'Erzurum Buyuksehir')
         match_actual = match_actual.replace('Hamburger SV', 'Hamburgo')
-
+        match_actual = match_actual.replace('Ascoli', 'Ascoli Calcio')
+        match_actual = match_actual.replace('Mouscron', 'Royal Excel Mouscron')
+        match_actual = match_actual.replace('FK Crvena zvezda', 'Estrela Vermelha')
+        match_actual = match_actual.replace('PSV', 'PSV Eind')
+        match_actual = match_actual.replace('Salernitana', 'Salernitana Calcio')
 
         ###################
         if len(matches) > 0:
@@ -198,7 +207,7 @@ def data_matcher(matches, url_found):
                     score = similar(match_actual, match)
                     match_found = match
             print(str(score) + ': ' + match_actual + '-->' + match_found)
-        if score >= 0.65:
+        if score >= 0.7:
             ordered_odds.append(matches[match_found])
             urls.append(url_found[match_found])
         else:
@@ -241,7 +250,7 @@ def similar(a, b):
     a1, a2 = a.split(' - ')
     b1, b2 = b.split(' - ')
     score = [SequenceMatcher(None, a, b).ratio(), SequenceMatcher(None, b, a).ratio()]
-    aux = max([SequenceMatcher(None, b1, a1).ratio(), SequenceMatcher(None, a1, b1).ratio()])/2
-    aux = aux + max([SequenceMatcher(None, b2, a2).ratio(), SequenceMatcher(None, a2, b2).ratio()])/2
+    aux = max([SequenceMatcher(None, b1, a1).ratio(), SequenceMatcher(None, a1, b1).ratio()]) / 2
+    aux = aux + max([SequenceMatcher(None, b2, a2).ratio(), SequenceMatcher(None, a2, b2).ratio()]) / 2
     score.append(aux)
     return max(score)
